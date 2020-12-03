@@ -66,6 +66,8 @@ namespace BasketballScoreboard_Client
             UpdatePlayersList();
 
             playerIdNumeric.Value = playerIdNumeric.Value < 20 ? ++playerIdNumeric.Value : playerIdNumeric.Value;
+            playerNameTextBox.Text = "";
+            playerNameTextBox.Focus();
         }
 
         private void removePlayerButton_Click(object sender, EventArgs e)

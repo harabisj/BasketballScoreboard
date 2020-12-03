@@ -8,9 +8,11 @@ namespace BasketballScoreboard_Client.Data
 {
     public static class Game
     {
+        public static bool started = false;
+
         public static Team teamA;
         public static Team teamB;
         public static int periodLength;
-        public static int currentPeriod = 1;
+        public static int currentPeriod = 0;
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "1",
             "Karel"}, -1);
             this.addPlayerButton = new System.Windows.Forms.Button();
@@ -74,7 +74,7 @@
             this.name});
             this.playersList.HideSelection = false;
             this.playersList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.playersList.Location = new System.Drawing.Point(12, 141);
             this.playersList.Name = "playersList";
             this.playersList.Size = new System.Drawing.Size(204, 272);
@@ -185,6 +185,9 @@
             this.Controls.Add(this.teamNameLabel);
             this.Controls.Add(this.removePlayerButton);
             this.Controls.Add(this.playersList);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "EditTeamForm";
             this.Text = "Upravit hráče";
             this.Load += new System.EventHandler(this.EditTeamForm_Load);

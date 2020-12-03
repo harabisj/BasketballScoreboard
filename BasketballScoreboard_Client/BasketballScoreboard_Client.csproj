@@ -66,6 +66,12 @@
       <DependentUpon>EditTeamForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Extensions.cs" />
+    <Compile Include="GameControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameControlForm.Designer.cs">
+      <DependentUpon>GameControlForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameInitForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditTeamForm.resx">
       <DependentUpon>EditTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameControlForm.resx">
+      <DependentUpon>GameControlForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameInitForm.resx">
       <DependentUpon>GameInitForm.cs</DependentUpon>

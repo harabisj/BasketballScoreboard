@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BasketballScoreboard_Client.Data;
 
 namespace BasketballScoreboard_Client
 {
@@ -65,7 +66,8 @@ namespace BasketballScoreboard_Client
         public void Connected(object sender, EventArgs e)
         {
             connectionForm.Hide();
-            gameInitForm.Show();
+            if (!Game.started)
+                gameInitForm.Show();
         }
 
         public void Disconnected(object sender, EventArgs e)

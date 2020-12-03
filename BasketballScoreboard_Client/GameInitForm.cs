@@ -57,9 +57,34 @@ namespace BasketballScoreboard_Client
         {
             if (Game.teamA.players.Count > 0 && Game.teamA.players.Count > 0)
             {
-                // WIP: start game
+                Game.started = true;
+                Hide();
+                new GameControlForm().Show();
             }
-            return;
+            else
+            {
+                MessageBox.Show(
+                    "Oba týmy musí mít alespoň jednoho hráče.",
+                    "Nedostatečný počet hráčů",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+            }
+        }
+
+        private void GameInitForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show(
+                "Opravdu chcete ukončit BasketballScoreboard? Přijdete o veškerá zadaná data.",
+                "Ukončit BasketballScoreboard",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (dr == DialogResult.Yes)
+                Environment.Exit(0);
+            else
+                e.Cancel = true;
         }
     }
 }

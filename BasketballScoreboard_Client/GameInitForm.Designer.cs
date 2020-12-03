@@ -180,9 +180,12 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "GameInitForm";
-            this.Text = "BasketballScoreboard Client";
+            this.Text = "Nastavení hry";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameInitForm_FormClosing);
             this.Load += new System.EventHandler(this.GameInitForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.periodLengthNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
