@@ -13,7 +13,7 @@ namespace BasketballScoreboard_Client
     {
         private SimpleTcpClient client;
         private ConnectionForm connectionForm;
-        private MainForm mainForm;
+        private GameInitForm gameInitForm;
 
         private string ip;
 
@@ -22,7 +22,7 @@ namespace BasketballScoreboard_Client
             this.connectionForm = connectionForm;
             this.ip = ip;
 
-            this.mainForm = new MainForm(this);
+            this.gameInitForm = new GameInitForm(this);
         }
 
         public void TryToConnect()
@@ -65,12 +65,12 @@ namespace BasketballScoreboard_Client
         public void Connected(object sender, EventArgs e)
         {
             connectionForm.Hide();
-            mainForm.Show();
+            gameInitForm.Show();
         }
 
         public void Disconnected(object sender, EventArgs e)
         {
-            mainForm.BeginInvoke((MethodInvoker) delegate { mainForm.Hide(); });
+            gameInitForm.BeginInvoke((MethodInvoker) delegate { gameInitForm.Hide(); });
             connectionForm.BeginInvoke((MethodInvoker) delegate { connectionForm.Show(); });
         }
 

@@ -56,20 +56,32 @@
       <DependentUpon>ConnectionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnectionsManager.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="Data\Game.cs" />
+    <Compile Include="Data\Player.cs" />
+    <Compile Include="Data\Team.cs" />
+    <Compile Include="EditTeamForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="EditTeamForm.Designer.cs">
+      <DependentUpon>EditTeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="GameInitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameInitForm.Designer.cs">
+      <DependentUpon>GameInitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ConnectionForm.resx">
       <DependentUpon>ConnectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="EditTeamForm.resx">
+      <DependentUpon>EditTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameInitForm.resx">
+      <DependentUpon>GameInitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
