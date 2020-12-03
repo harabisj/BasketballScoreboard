@@ -36,5 +36,10 @@ namespace BasketballScoreboard_Client.Data
             this.points = 0;
             this.timeouts_left = timeouts_left;
         }
+
+        public int GetTotalFouls()
+        {
+            return players.Select(player => player.fouls).Sum();
+        }
     }
 }
