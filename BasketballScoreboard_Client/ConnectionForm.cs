@@ -7,30 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SimpleTcp;
 
 namespace BasketballScoreboard_Client
 {
-    public partial class MainForm : Form
+    public partial class ConnectionForm : Form
     {
-        private SimpleTcpClient client;
         private ConnectionsManager connectionsManager;
 
-        public MainForm(ConnectionsManager connectionsManager)
+        public ConnectionForm()
         {
             InitializeComponent();
-
-            this.connectionsManager = connectionsManager;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ipTextBox_TextChanged(object sender, EventArgs e)
         {
-            connectionsManager.SendData("cscs");
+            connectButton.Enabled = !(ipTextBox.Text == "");
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void connectButton_Click(object sender, EventArgs e)
         {
-            ;
+            connectionsManager = new ConnectionsManager(this, ipTextBox.Text);
+            connectionsManager.TryToConnect();
         }
     }
 }
