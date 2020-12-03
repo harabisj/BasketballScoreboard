@@ -25,6 +25,7 @@ namespace BasketballScoreboard_Server
             /**
              * Fill the ListBox with available IPv4 addresses
              */
+            ipListBox.Items.Add("127.0.0.1");
             IPHostEntry hostEntry = Dns.GetHostEntry(Dns.GetHostName());
             foreach (IPAddress ip in hostEntry.AddressList)
             {
