@@ -38,9 +38,9 @@
             this.teamAPlayersButton = new System.Windows.Forms.Button();
             this.teamBPlayersButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.defaultTimeoutsNumeric = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.periodLengthNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.defaultTimeoutsNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,6 +73,7 @@
             0,
             0,
             0});
+            this.periodLengthNumeric.ValueChanged += new System.EventHandler(this.periodLengthNumeric_ValueChanged);
             // 
             // label2
             // 
@@ -147,22 +148,23 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Počet timeoutů";
             // 
-            // numericUpDown1
+            // defaultTimeoutsNumeric
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(94, 36);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.defaultTimeoutsNumeric.Location = new System.Drawing.Point(94, 36);
+            this.defaultTimeoutsNumeric.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(67, 20);
-            this.numericUpDown1.TabIndex = 1;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.defaultTimeoutsNumeric.Name = "defaultTimeoutsNumeric";
+            this.defaultTimeoutsNumeric.Size = new System.Drawing.Size(67, 20);
+            this.defaultTimeoutsNumeric.TabIndex = 1;
+            this.defaultTimeoutsNumeric.Value = new decimal(new int[] {
             3,
             0,
             0,
             0});
+            this.defaultTimeoutsNumeric.ValueChanged += new System.EventHandler(this.defaultTimeoutsNumeric_ValueChanged);
             // 
             // GameInitForm
             // 
@@ -175,7 +177,7 @@
             this.Controls.Add(this.teamANameTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.createGameButton);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.defaultTimeoutsNumeric);
             this.Controls.Add(this.periodLengthNumeric);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -188,7 +190,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameInitForm_FormClosing);
             this.Load += new System.EventHandler(this.GameInitForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.periodLengthNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.defaultTimeoutsNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,7 +208,7 @@
         private System.Windows.Forms.Button teamAPlayersButton;
         private System.Windows.Forms.Button teamBPlayersButton;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown defaultTimeoutsNumeric;
     }
 }
 

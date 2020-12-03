@@ -13,9 +13,23 @@ namespace BasketballScoreboard_Client
 {
     public partial class GameControlForm : Form
     {
-        public GameControlForm()
+        private ConnectionsManager connectionsManager;
+
+        private TimerManager mainClock;
+        private TimerManager timeoutClock;
+
+        public GameControlForm(ConnectionsManager connectionsManager)
         {
             InitializeComponent();
+
+            this.connectionsManager = connectionsManager;
+
+            mainClock = new TimerManager(
+                mainTimer,
+                Game.periodLength * 60,
+                OnMainClockUpdate,
+                OnMainClockStop
+            );
         }
 
         private void GameControlForm_Load(object sender, EventArgs e)
@@ -23,8 +37,12 @@ namespace BasketballScoreboard_Client
             teamAGroupBox.Text = Game.teamA.name;
             teamBGroupBox.Text = Game.teamB.name;
             UpdateTeamGroupBoxes();
+            UpdatePeriod();
         }
 
+        /**
+         * Form update methods
+         */
         private void UpdateTeamGroupBoxes()
         {
             // Team A
@@ -39,6 +57,12 @@ namespace BasketballScoreboard_Client
             teamBFoulsLabel.Text = b.GetTotalFouls().ToString();
             teamBTimeoutsLabel.Text = b.timeouts_left.ToString();
         }
+
+        private void UpdatePeriod()
+        {
+            periodNumberLabel.Text = Game.currentPeriod.ToString();
+        }
+
 
         /**
          * Team A events
@@ -95,6 +119,7 @@ namespace BasketballScoreboard_Client
             // TODO
         }
 
+
         /**
          * Team B events
          */
@@ -148,6 +173,70 @@ namespace BasketballScoreboard_Client
         private void foulsBAdd1Button_Click(object sender, EventArgs e)
         {
             // TODO
+        }
+
+
+        /**
+         * Other events
+         */
+        private void clockStartButton_Click(object sender, EventArgs e)
+        {
+            clockLabel.ForeColor = Color.Black;
+            mainClock.Start();
+        }
+
+        private void clockStopButton_Click(object sender, EventArgs e)
+        {
+            mainClock.Stop();
+        }
+
+        public bool OnMainClockUpdate(int current_seconds)
+        {
+            this.InvokeIfRequired(() => {
+                clockLabel.Text = TimeSpan.FromSeconds(current_seconds).ToString(@"mm\:ss");
+            });
+            return true;
+        }
+
+        public void OnMainClockStop()
+        {
+            this.InvokeIfRequired(async () => {
+                clockLabel.ForeColor = Color.Red;
+
+                if (Game.currentPeriod != 4)
+                {
+                    clockStartButton.Enabled = false;
+                    clockStopButton.Enabled = false;
+                    periodAdd1Button.Enabled = false;
+                    periodSub1Button.Enabled = false;
+                    
+                    await Task.Delay(8000);
+
+                    clockStartButton.Enabled = true;
+                    clockStopButton.Enabled = true;
+                    periodAdd1Button.Enabled = true;
+                    periodSub1Button.Enabled = true;
+                    Game.currentPeriod++;
+                    UpdatePeriod();
+                    mainClock.Reset();
+                }
+            });
+        }
+
+        private void periodSub1Button_Click(object sender, EventArgs e)
+        {
+            if (Game.currentPeriod != 1)
+                Game.currentPeriod--;
+            mainClock.Reset();
+            UpdatePeriod();
+        }
+
+        private void periodAdd1Button_Click(object sender, EventArgs e)
+        {
+            if (Game.currentPeriod != 4)
+                Game.currentPeriod++;
+            mainClock.Reset();
+            UpdatePeriod();
         }
     }
 }

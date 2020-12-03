@@ -14,7 +14,6 @@ namespace BasketballScoreboard_Client
 {
     public partial class GameInitForm : Form
     {
-        private SimpleTcpClient client;
         private ConnectionsManager connectionsManager;
 
         public GameInitForm(ConnectionsManager connectionsManager)
@@ -59,7 +58,7 @@ namespace BasketballScoreboard_Client
             {
                 Game.started = true;
                 Hide();
-                new GameControlForm().Show();
+                new GameControlForm(connectionsManager).Show();
             }
             else
             {
@@ -85,6 +84,17 @@ namespace BasketballScoreboard_Client
                 Environment.Exit(0);
             else
                 e.Cancel = true;
+        }
+
+        private void periodLengthNumeric_ValueChanged(object sender, EventArgs e)
+        {
+            Game.periodLength = Convert.ToInt32(periodLengthNumeric.Value);
+        }
+
+        private void defaultTimeoutsNumeric_ValueChanged(object sender, EventArgs e)
+        {
+            Game.teamA.timeouts_left = Convert.ToInt32(defaultTimeoutsNumeric.Value);
+            Game.teamB.timeouts_left = Convert.ToInt32(defaultTimeoutsNumeric.Value);
         }
     }
 }

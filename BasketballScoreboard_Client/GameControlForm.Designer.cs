@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.clockLabel = new System.Windows.Forms.Label();
             this.teamAGroupBox = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,6 +65,9 @@
             this.clockStartButton = new System.Windows.Forms.Button();
             this.clockStopButton = new System.Windows.Forms.Button();
             this.runTimeoutButton = new System.Windows.Forms.Button();
+            this.mainTimer = new System.Windows.Forms.Timer(this.components);
+            this.periodSub1Button = new System.Windows.Forms.Button();
+            this.periodAdd1Button = new System.Windows.Forms.Button();
             this.teamAGroupBox.SuspendLayout();
             this.teamBGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -466,6 +470,7 @@
             this.clockStartButton.TabIndex = 2;
             this.clockStartButton.Text = "Start";
             this.clockStartButton.UseVisualStyleBackColor = true;
+            this.clockStartButton.Click += new System.EventHandler(this.clockStartButton_Click);
             // 
             // clockStopButton
             // 
@@ -475,6 +480,7 @@
             this.clockStopButton.TabIndex = 2;
             this.clockStopButton.Text = "Stop";
             this.clockStopButton.UseVisualStyleBackColor = true;
+            this.clockStopButton.Click += new System.EventHandler(this.clockStopButton_Click);
             // 
             // runTimeoutButton
             // 
@@ -484,6 +490,30 @@
             this.runTimeoutButton.TabIndex = 1;
             this.runTimeoutButton.Text = "Spustit timeout";
             this.runTimeoutButton.UseVisualStyleBackColor = true;
+            // 
+            // mainTimer
+            // 
+            this.mainTimer.Interval = 1000;
+            // 
+            // periodSub1Button
+            // 
+            this.periodSub1Button.Location = new System.Drawing.Point(102, 15);
+            this.periodSub1Button.Name = "periodSub1Button";
+            this.periodSub1Button.Size = new System.Drawing.Size(37, 23);
+            this.periodSub1Button.TabIndex = 1;
+            this.periodSub1Button.Text = "-1";
+            this.periodSub1Button.UseVisualStyleBackColor = true;
+            this.periodSub1Button.Click += new System.EventHandler(this.periodSub1Button_Click);
+            // 
+            // periodAdd1Button
+            // 
+            this.periodAdd1Button.Location = new System.Drawing.Point(143, 15);
+            this.periodAdd1Button.Name = "periodAdd1Button";
+            this.periodAdd1Button.Size = new System.Drawing.Size(37, 23);
+            this.periodAdd1Button.TabIndex = 1;
+            this.periodAdd1Button.Text = "+1";
+            this.periodAdd1Button.UseVisualStyleBackColor = true;
+            this.periodAdd1Button.Click += new System.EventHandler(this.periodAdd1Button_Click);
             // 
             // GameControlForm
             // 
@@ -497,6 +527,8 @@
             this.Controls.Add(this.periodNumberLabel);
             this.Controls.Add(this.runTimeoutButton);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.periodAdd1Button);
+            this.Controls.Add(this.periodSub1Button);
             this.Controls.Add(this.clockLabel);
             this.Name = "GameControlForm";
             this.Text = "BasketballScoreboard";
@@ -548,5 +580,8 @@
         private System.Windows.Forms.Button clockStartButton;
         private System.Windows.Forms.Button clockStopButton;
         private System.Windows.Forms.Button runTimeoutButton;
+        private System.Windows.Forms.Timer mainTimer;
+        private System.Windows.Forms.Button periodSub1Button;
+        private System.Windows.Forms.Button periodAdd1Button;
     }
 }
