@@ -28,12 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.ipListBox = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.startButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // ipListBox
+            // 
+            this.ipListBox.FormattingEnabled = true;
+            this.ipListBox.Location = new System.Drawing.Point(9, 18);
+            this.ipListBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ipListBox.Name = "ipListBox";
+            this.ipListBox.Size = new System.Drawing.Size(138, 95);
+            this.ipListBox.TabIndex = 0;
+            this.ipListBox.SelectedIndexChanged += new System.EventHandler(this.ipListBox_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Vyberte IPv4 adresu serveru:";
+            // 
+            // startButton
+            // 
+            this.startButton.Enabled = false;
+            this.startButton.Location = new System.Drawing.Point(9, 118);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(138, 23);
+            this.startButton.TabIndex = 2;
+            this.startButton.Text = "Spustit server";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // ConnectionForm
+            // 
+            this.AcceptButton = this.startButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ConnectionForm";
+            this.ClientSize = new System.Drawing.Size(155, 146);
+            this.Controls.Add(this.startButton);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ipListBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ConnectionForm";
+            this.Text = "BasketballScoreboard";
+            this.Load += new System.EventHandler(this.ConnectionForm_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox ipListBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button startButton;
     }
 }
