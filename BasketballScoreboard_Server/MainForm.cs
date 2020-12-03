@@ -12,9 +12,13 @@ namespace BasketballScoreboard_Server
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        public String ip;
+
+        public MainForm(string ip)
         {
             InitializeComponent();
+
+            this.ip = ip;
         }
     }
 }

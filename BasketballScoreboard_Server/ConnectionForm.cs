@@ -13,6 +13,8 @@ namespace BasketballScoreboard_Server
 {
     public partial class ConnectionForm : Form
     {
+        public string selectedIp = "";
+
         public ConnectionForm()
         {
             InitializeComponent();
@@ -33,13 +35,17 @@ namespace BasketballScoreboard_Server
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            // WIP: Call MainForm and pass IP
+            /**
+             * Save the selected IP to public property and close the form
+             */
+            selectedIp = ipListBox.SelectedItem.ToString();
+            Close();
         }
 
         private void ipListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             /**
-             * Validate the ipListBox selection.
+             * Validate the ipListBox selection
              */
             startButton.Enabled = !(ipListBox.SelectedIndex == -1);
         }
