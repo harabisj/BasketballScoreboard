@@ -205,20 +205,27 @@ namespace BasketballScoreboard_Client
 
                 if (Game.currentPeriod != 4)
                 {
-                    clockStartButton.Enabled = false;
-                    clockStopButton.Enabled = false;
-                    periodAdd1Button.Enabled = false;
-                    periodSub1Button.Enabled = false;
+                    Extensions.ControlsEnabled(new Control[] {
+                        clockStartButton,
+                        clockStopButton,
+                        periodAdd1Button,
+                        periodSub1Button,
+                        runTimeoutButton
+                    }, false);
                     
                     await Task.Delay(8000);
 
-                    clockStartButton.Enabled = true;
-                    clockStopButton.Enabled = true;
-                    periodAdd1Button.Enabled = true;
-                    periodSub1Button.Enabled = true;
+                    Extensions.ControlsEnabled(new Control[] {
+                        clockStartButton,
+                        clockStopButton,
+                        periodAdd1Button,
+                        periodSub1Button,
+                        runTimeoutButton
+                    }, true);
                     Game.currentPeriod++;
                     UpdatePeriod();
                     mainClock.Reset();
+                    clockLabel.ForeColor = Color.Black;
                 }
             });
         }

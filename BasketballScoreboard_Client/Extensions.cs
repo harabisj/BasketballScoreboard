@@ -14,5 +14,11 @@ namespace BasketballScoreboard_Client
             if (control.InvokeRequired) control.Invoke(action);
             else action();
         }
+
+        public static void ControlsEnabled(Control[] controls, bool enabled)
+        {
+            foreach (Control control in controls)
+                control.Enabled = enabled;
+        }
     }
 }
