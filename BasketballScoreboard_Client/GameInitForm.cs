@@ -93,8 +93,8 @@ namespace BasketballScoreboard_Client
 
         private void defaultTimeoutsNumeric_ValueChanged(object sender, EventArgs e)
         {
-            Game.teamA.timeouts_left = Convert.ToInt32(defaultTimeoutsNumeric.Value);
-            Game.teamB.timeouts_left = Convert.ToInt32(defaultTimeoutsNumeric.Value);
+            Game.teamA.timeoutsLeft = Convert.ToInt32(defaultTimeoutsNumeric.Value);
+            Game.teamB.timeoutsLeft = Convert.ToInt32(defaultTimeoutsNumeric.Value);
         }
     }
 }

@@ -49,13 +49,13 @@ namespace BasketballScoreboard_Client
             Team a = Game.teamA;
             teamAPointsLabel.Text = a.points.ToString();
             teamAFoulsLabel.Text = a.GetTotalFouls().ToString();
-            teamATimeoutsLabel.Text = a.timeouts_left.ToString();
+            teamATimeoutsLabel.Text = a.timeoutsLeft.ToString();
 
             // Team B
             Team b = Game.teamB;
             teamBPointsLabel.Text = b.points.ToString();
             teamBFoulsLabel.Text = b.GetTotalFouls().ToString();
-            teamBTimeoutsLabel.Text = b.timeouts_left.ToString();
+            teamBTimeoutsLabel.Text = b.timeoutsLeft.ToString();
         }
 
         private void UpdatePeriod()
@@ -97,15 +97,15 @@ namespace BasketballScoreboard_Client
 
         private void timeoutsASub1Button_Click(object sender, EventArgs e)
         {
-            if (Game.teamA.timeouts_left != 0)
-                Game.teamA.timeouts_left--;
+            if (Game.teamA.timeoutsLeft != 0)
+                Game.teamA.timeoutsLeft--;
             UpdateTeamGroupBoxes();
         }
 
         private void timeoutsAAdd1Button_Click(object sender, EventArgs e)
         {
-            if (Game.teamA.timeouts_left != 99)
-                Game.teamA.timeouts_left++;
+            if (Game.teamA.timeoutsLeft != 99)
+                Game.teamA.timeoutsLeft++;
             UpdateTeamGroupBoxes();
         }
 
@@ -153,15 +153,15 @@ namespace BasketballScoreboard_Client
 
         private void timeoutsBSub1Button_Click(object sender, EventArgs e)
         {
-            if (Game.teamB.timeouts_left != 0)
-                Game.teamB.timeouts_left--;
+            if (Game.teamB.timeoutsLeft != 0)
+                Game.teamB.timeoutsLeft--;
             UpdateTeamGroupBoxes();
         }
 
         private void timeoutsBAdd1Button_Click(object sender, EventArgs e)
         {
-            if (Game.teamB.timeouts_left != 0)
-                Game.teamB.timeouts_left++;
+            if (Game.teamB.timeoutsLeft != 0)
+                Game.teamB.timeoutsLeft++;
             UpdateTeamGroupBoxes();
         }
 

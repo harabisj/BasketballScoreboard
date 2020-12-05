@@ -11,30 +11,30 @@ namespace BasketballScoreboard_Client.Data
         public string name;
         public List<Player> players;
         public int points;
-        public int timeouts_left;
+        public int timeoutsLeft;
 
-        public Team(string name, List<Player> players, int points, int timeouts_left)
+        public Team(string name, List<Player> players, int points, int timeoutsLeft)
         {
             this.name = name;
             this.players = players;
             this.points = points;
-            this.timeouts_left = timeouts_left;
+            this.timeoutsLeft = timeoutsLeft;
         }
 
-        public Team(string name, List<Player> players, int timeouts_left)
+        public Team(string name, List<Player> players, int timeoutsLeft)
         {
             this.name = name;
             this.players = players;
             this.points = 0;
-            this.timeouts_left = timeouts_left;
+            this.timeoutsLeft = timeoutsLeft;
         }
 
-        public Team(string name, int timeouts_left)
+        public Team(string name, int timeoutsLeft)
         {
             this.name = name;
             this.players = new List<Player>();
             this.points = 0;
-            this.timeouts_left = timeouts_left;
+            this.timeoutsLeft = timeoutsLeft;
         }
 
         public int GetTotalFouls()
