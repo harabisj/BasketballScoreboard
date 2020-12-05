@@ -81,7 +81,10 @@ namespace BasketballScoreboard_Client
             );
 
             if (dr == DialogResult.Yes)
+            {
+                connectionsManager.Disconnect();
                 Environment.Exit(0);
+            }
             else
                 e.Cancel = true;
         }

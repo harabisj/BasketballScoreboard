@@ -56,6 +56,11 @@ namespace BasketballScoreboard_Client
             }
         }
 
+        public void Disconnect()
+        {
+            client.Disconnect();
+        }
+
         /**
          * Event handlers
          */
