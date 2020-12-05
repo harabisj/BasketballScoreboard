@@ -13,7 +13,7 @@ namespace BasketballScoreboard_Client
 {
     public partial class GameControlForm : Form
     {
-        private DataManager dataManager;
+        private ConnectionsManager connectionsManager;
 
         private TimerManager mainClock;
         private TimerManager timeoutClock;
@@ -22,7 +22,7 @@ namespace BasketballScoreboard_Client
         {
             InitializeComponent();
 
-            dataManager = new DataManager(connectionsManager);
+            this.connectionsManager = connectionsManager;
 
             mainClock = new TimerManager(
                 mainTimer,
@@ -63,6 +63,14 @@ namespace BasketballScoreboard_Client
             periodNumberLabel.Text = Game.currentPeriod.ToString();
         }
 
+        /**
+         * ConnectionsManager.SendGameData() alias
+         */
+        private void SendGameData()
+        {
+            connectionsManager.SendGameData();
+        }
+
 
         /**
          * Team A events
@@ -72,6 +80,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamA.points != 0)
                 Game.teamA.points--;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void scoreAAdd1Button_Click(object sender, EventArgs e)
@@ -79,7 +88,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamA.points != 99)
                 Game.teamA.points++;
             UpdateTeamGroupBoxes();
-            dataManager.SendGameData();
+            SendGameData();
         }
 
         private void scoreAAdd2Button_Click(object sender, EventArgs e)
@@ -87,6 +96,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamA.points != 99)
                 Game.teamA.points += 2;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void scoreAAdd3Button_Click(object sender, EventArgs e)
@@ -94,6 +104,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamA.points != 99)
                 Game.teamA.points += 3;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void timeoutsASub1Button_Click(object sender, EventArgs e)
@@ -101,6 +112,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamA.timeoutsLeft != 0)
                 Game.teamA.timeoutsLeft--;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void timeoutsAAdd1Button_Click(object sender, EventArgs e)
@@ -108,6 +120,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamA.timeoutsLeft != 99)
                 Game.teamA.timeoutsLeft++;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void foulsASub1Button_Click(object sender, EventArgs e)
@@ -129,6 +142,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamB.points != 0)
                 Game.teamB.points--;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void scoreBAdd1Button_Click(object sender, EventArgs e)
@@ -136,6 +150,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamB.points != 99)
                 Game.teamB.points++;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void scoreBAdd2Button_Click(object sender, EventArgs e)
@@ -143,6 +158,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamB.points != 99)
                 Game.teamB.points += 2;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void scoreBAdd3Button_Click(object sender, EventArgs e)
@@ -150,6 +166,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamB.points != 99)
                 Game.teamB.points += 3;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void timeoutsBSub1Button_Click(object sender, EventArgs e)
@@ -157,6 +174,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamB.timeoutsLeft != 0)
                 Game.teamB.timeoutsLeft--;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void timeoutsBAdd1Button_Click(object sender, EventArgs e)
@@ -164,6 +182,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamB.timeoutsLeft != 0)
                 Game.teamB.timeoutsLeft++;
             UpdateTeamGroupBoxes();
+            SendGameData();
         }
 
         private void foulsBSub1Button_Click(object sender, EventArgs e)
@@ -193,6 +212,8 @@ namespace BasketballScoreboard_Client
 
         public bool OnMainClockUpdate(int current_seconds)
         {
+            Game.currentTime = current_seconds;
+            SendGameData();
             this.InvokeIfRequired(() => {
                 clockLabel.Text = TimeSpan.FromSeconds(current_seconds).ToString(@"mm\:ss");
             });
@@ -237,6 +258,7 @@ namespace BasketballScoreboard_Client
                 Game.currentPeriod--;
             mainClock.Reset();
             UpdatePeriod();
+            SendGameData();
         }
 
         private void periodAdd1Button_Click(object sender, EventArgs e)
@@ -245,6 +267,7 @@ namespace BasketballScoreboard_Client
                 Game.currentPeriod++;
             mainClock.Reset();
             UpdatePeriod();
+            SendGameData();
         }
     }
 }

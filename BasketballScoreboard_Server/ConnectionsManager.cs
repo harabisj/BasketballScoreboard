@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BasketballScoreboard_Server.Data;
+using Newtonsoft.Json;
 
 namespace BasketballScoreboard_Server
 {
@@ -78,7 +80,8 @@ namespace BasketballScoreboard_Server
         {
             if (clientIp == Extensions.getIpOnly(e.IpPort))
             {
-                MessageBox.Show(Encoding.UTF8.GetString(e.Data));
+                Game game = JsonConvert.DeserializeObject<Game>(Encoding.UTF8.GetString(e.Data));
+                mainForm.UpdateGameData(game);
             }
         }
     }

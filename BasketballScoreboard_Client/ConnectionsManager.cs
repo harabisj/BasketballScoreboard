@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BasketballScoreboard_Client.Data;
+using Newtonsoft.Json;
 
 namespace BasketballScoreboard_Client
 {
@@ -55,11 +56,6 @@ namespace BasketballScoreboard_Client
             }
         }
 
-        public void SendData(string data)
-        {
-            client.Send(data);
-        }
-
         /**
          * Event handlers
          */
@@ -78,7 +74,19 @@ namespace BasketballScoreboard_Client
 
         public void DataReceived(object sender, DataReceivedFromServerEventArgs e)
         {
+            // WIP
             MessageBox.Show(Encoding.UTF8.GetString(e.Data), "client");
+        }
+
+        /**
+         * Data manipulation
+         */
+        public void SendGameData()
+        {
+            /**
+             * Serialize the game data and send to the server
+             */
+            client.Send(JsonConvert.SerializeObject(new Game()));
         }
     }
 }

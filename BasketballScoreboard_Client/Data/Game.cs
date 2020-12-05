@@ -22,5 +22,8 @@ namespace BasketballScoreboard_Client.Data
 
         [JsonProperty]
         public static int currentPeriod = 1;
+
+        [JsonProperty]
+        public static int currentTime = 0;
     }
 }

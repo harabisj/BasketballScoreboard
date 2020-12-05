@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BasketballScoreboard_Server.Data;
 
 namespace BasketballScoreboard_Server
 {
@@ -34,6 +35,13 @@ namespace BasketballScoreboard_Server
             this.InvokeIfRequired(() => { 
                 serverStatusLabel.Text = connected ? "ONLINE" : "ČEKÁ SE NA PŘIPOJENÍ";
                 serverStatusLabel.BackColor = connected ? Color.FromArgb(46, 204, 113) : Color.FromArgb(241, 196, 15);
+            });
+        }
+
+        public void UpdateGameData(Game game)
+        {
+            this.InvokeIfRequired(() => {
+                // TODO
             });
         }
     }
