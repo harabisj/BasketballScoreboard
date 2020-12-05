@@ -20,5 +20,9 @@ namespace BasketballScoreboard_Server.Data
 
         [JsonProperty]
         public int currentPeriod { get; set; }
+
+
+        [JsonProperty]
+        public int currentTime { get; set; }
     }
 }

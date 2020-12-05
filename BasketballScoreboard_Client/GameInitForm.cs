@@ -54,7 +54,7 @@ namespace BasketballScoreboard_Client
 
         private void createGameButton_Click(object sender, EventArgs e)
         {
-            if (Game.teamA.players.Count > 0 && Game.teamA.players.Count > 0)
+            if (Game.teamA.players.Count > 0 && Game.teamB.players.Count > 0)
             {
                 Game.started = true;
                 Hide();
@@ -95,6 +95,15 @@ namespace BasketballScoreboard_Client
         {
             Game.teamA.timeoutsLeft = Convert.ToInt32(defaultTimeoutsNumeric.Value);
             Game.teamB.timeoutsLeft = Convert.ToInt32(defaultTimeoutsNumeric.Value);
+        }
+
+        private void GameInitForm_Shown(object sender, EventArgs e)
+        {
+            if (Game.started)
+            {
+                Hide();
+                new GameControlForm(connectionsManager).Show();
+            }
         }
     }
 }

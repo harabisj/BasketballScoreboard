@@ -62,8 +62,7 @@ namespace BasketballScoreboard_Client
         public void Connected(object sender, EventArgs e)
         {
             connectionForm.Hide();
-            if (!Game.started)
-                gameInitForm.Show();
+            gameInitForm.Show();
         }
 
         public void Disconnected(object sender, EventArgs e)

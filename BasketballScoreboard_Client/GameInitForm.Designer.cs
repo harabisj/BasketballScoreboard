@@ -189,6 +189,7 @@
             this.Text = "Nastavení hry";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameInitForm_FormClosing);
             this.Load += new System.EventHandler(this.GameInitForm_Load);
+            this.Shown += new System.EventHandler(this.GameInitForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.periodLengthNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultTimeoutsNumeric)).EndInit();
             this.ResumeLayout(false);
