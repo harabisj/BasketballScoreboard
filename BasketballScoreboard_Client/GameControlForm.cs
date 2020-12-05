@@ -18,6 +18,9 @@ namespace BasketballScoreboard_Client
         private TimerManager mainClock;
         private TimerManager timeoutClock;
 
+        private readonly Control[] mainFreezeControls;
+        private readonly Control[] timeoutFreezeControls;
+
         public GameControlForm(ConnectionsManager connectionsManager)
         {
             InitializeComponent();
@@ -30,6 +33,40 @@ namespace BasketballScoreboard_Client
                 OnMainClockUpdate,
                 OnMainClockStop
             );
+            timeoutClock = new TimerManager(
+                timeoutTimer,
+                30,
+                OnTimeoutClockUpdate,
+                OnTimeoutClockStop
+            );
+
+
+            mainFreezeControls = new Control[] {
+                clockStartButton,
+                clockStopButton,
+                periodAdd1Button,
+                periodSub1Button,
+                runTimeoutButton
+            };
+            timeoutFreezeControls = mainFreezeControls.Union(new Control[] {
+                scoreASub1Button,
+                scoreAAdd1Button,
+                scoreAAdd2Button,
+                scoreAAdd3Button,
+                foulsASub1Button,
+                foulsAAdd1Button,
+                timeoutsASub1Button,
+                timeoutsAAdd1Button,
+
+                scoreBSub1Button,
+                scoreBAdd1Button,
+                scoreBAdd2Button,
+                scoreBAdd3Button,
+                foulsBSub1Button,
+                foulsBAdd1Button,
+                timeoutsBSub1Button,
+                timeoutsBAdd1Button,
+            }).ToArray();
         }
 
         private void GameControlForm_Load(object sender, EventArgs e)
@@ -38,6 +75,7 @@ namespace BasketballScoreboard_Client
             teamBGroupBox.Text = Game.teamB.name;
             UpdateTeamGroupBoxes();
             UpdatePeriod();
+            SendGameData();
         }
 
         /**
@@ -210,12 +248,12 @@ namespace BasketballScoreboard_Client
             mainClock.Stop();
         }
 
-        public bool OnMainClockUpdate(int current_seconds)
+        public bool OnMainClockUpdate(int currentSeconds)
         {
-            Game.currentTime = current_seconds;
+            Game.currentTime = currentSeconds;
             SendGameData();
             this.InvokeIfRequired(() => {
-                clockLabel.Text = TimeSpan.FromSeconds(current_seconds).ToString(@"mm\:ss");
+                clockLabel.Text = TimeSpan.FromSeconds(currentSeconds).ToString(@"mm\:ss");
             });
             return true;
         }
@@ -227,23 +265,11 @@ namespace BasketballScoreboard_Client
 
                 if (Game.currentPeriod != 4)
                 {
-                    Extensions.ControlsEnabled(new Control[] {
-                        clockStartButton,
-                        clockStopButton,
-                        periodAdd1Button,
-                        periodSub1Button,
-                        runTimeoutButton
-                    }, false);
+                    Extensions.ControlsEnabled(mainFreezeControls, false);
                     
                     await Task.Delay(8000);
 
-                    Extensions.ControlsEnabled(new Control[] {
-                        clockStartButton,
-                        clockStopButton,
-                        periodAdd1Button,
-                        periodSub1Button,
-                        runTimeoutButton
-                    }, true);
+                    Extensions.ControlsEnabled(mainFreezeControls, true);
                     Game.currentPeriod++;
                     UpdatePeriod();
                     mainClock.Reset();
@@ -251,6 +277,28 @@ namespace BasketballScoreboard_Client
                 }
             });
         }
+
+        public bool OnTimeoutClockUpdate(int currentSeconds)
+        {
+            Game.currentTime = currentSeconds;
+            SendGameData();
+            this.InvokeIfRequired(() => {
+                clockLabel.Text = TimeSpan.FromSeconds(currentSeconds).ToString(@"mm\:ss");
+            });
+            return true;
+        }
+        
+        public void OnTimeoutClockStop()
+        {
+            Extensions.ControlsEnabled(timeoutFreezeControls, true);
+            this.InvokeIfRequired(async () => {
+                clockLabel.ForeColor = Color.Green;
+                await Task.Delay(8000);
+                clockLabel.ForeColor = Color.Black;
+            });
+        }
+
+
 
         private void periodSub1Button_Click(object sender, EventArgs e)
         {
@@ -268,6 +316,16 @@ namespace BasketballScoreboard_Client
             mainClock.Reset();
             UpdatePeriod();
             SendGameData();
+        }
+
+        private void runTimeoutButton_Click(object sender, EventArgs e)
+        {
+            mainClock.Stop();
+            clockLabel.ForeColor = Color.Black;
+            timeoutClock.Reset();
+            timeoutClock.Start();
+
+            Extensions.ControlsEnabled(timeoutFreezeControls, false);
         }
     }
 }
