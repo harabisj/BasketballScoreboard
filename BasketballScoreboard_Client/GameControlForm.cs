@@ -13,7 +13,7 @@ namespace BasketballScoreboard_Client
 {
     public partial class GameControlForm : Form
     {
-        private ConnectionsManager connectionsManager;
+        private DataManager dataManager;
 
         private TimerManager mainClock;
         private TimerManager timeoutClock;
@@ -22,7 +22,7 @@ namespace BasketballScoreboard_Client
         {
             InitializeComponent();
 
-            this.connectionsManager = connectionsManager;
+            dataManager = new DataManager(connectionsManager);
 
             mainClock = new TimerManager(
                 mainTimer,
@@ -79,6 +79,7 @@ namespace BasketballScoreboard_Client
             if (Game.teamA.points != 99)
                 Game.teamA.points++;
             UpdateTeamGroupBoxes();
+            dataManager.SendGameData();
         }
 
         private void scoreAAdd2Button_Click(object sender, EventArgs e)
