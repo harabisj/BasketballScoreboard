@@ -157,9 +157,9 @@
             this.label4.Location = new System.Drawing.Point(835, 952);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(268, 79);
+            this.label4.Size = new System.Drawing.Size(261, 79);
             this.label4.TabIndex = 1;
-            this.label4.Text = "FOULY";
+            this.label4.Text = "FAULY";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
