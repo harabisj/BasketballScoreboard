@@ -72,8 +72,15 @@ namespace BasketballScoreboard_Client
 
         public void Disconnected(object sender, EventArgs e)
         {
-            gameInitForm.BeginInvoke((MethodInvoker) delegate { gameInitForm.Hide(); });
-            connectionForm.BeginInvoke((MethodInvoker) delegate { connectionForm.Show(); });
+            DialogResult dr = MessageBox.Show(
+                "Spojení se serverem bylo přeruešno... Opakovat pokus o připojení?",
+                "Chyba spojení",
+                MessageBoxButtons.RetryCancel,
+                MessageBoxIcon.Warning
+            );
+
+            if (dr == DialogResult.Retry)
+                TryToConnect();
         }
 
         public void DataReceived(object sender, DataReceivedFromServerEventArgs e)

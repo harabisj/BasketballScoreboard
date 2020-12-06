@@ -15,7 +15,7 @@ namespace BasketballScoreboard_Server
             else action();
         }
 
-        public static string getIpOnly(string IpPort)
+        public static string GetIpOnly(string IpPort)
         {
             return IpPort.Split(':')[0];
         }

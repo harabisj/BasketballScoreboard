@@ -27,19 +27,18 @@ namespace BasketballScoreboard_Client
 
             this.connectionsManager = connectionsManager;
 
-            mainClock = new TimerManager(
-                mainTimer,
-                Game.periodLength * 60,
-                OnMainClockUpdate,
-                OnMainClockStop
-            );
             timeoutClock = new TimerManager(
                 timeoutTimer,
                 30,
                 OnTimeoutClockUpdate,
                 OnTimeoutClockStop
             );
-
+            mainClock = new TimerManager(
+                mainTimer,
+                Game.periodLength * 60,
+                OnMainClockUpdate,
+                OnMainClockStop
+            );
 
             mainFreezeControls = new Control[] {
                 clockStartButton,

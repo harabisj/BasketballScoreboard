@@ -62,14 +62,14 @@ namespace BasketballScoreboard_Server
         {
             if (clientIp == "")
             {
-                clientIp = Extensions.getIpOnly(e.IpPort);
+                clientIp = Extensions.GetIpOnly(e.IpPort);
                 mainForm.UpdateConnectionStatus(true);
             }
         }
 
         private void ClientDisconnected(object sender, ClientDisconnectedEventArgs e)
         {
-            if (clientIp == Extensions.getIpOnly(e.IpPort))
+            if (clientIp == Extensions.GetIpOnly(e.IpPort))
             {
                 clientIp = "";
                 mainForm.UpdateConnectionStatus(false);
@@ -78,10 +78,14 @@ namespace BasketballScoreboard_Server
 
         private void DataReceived(object sender, DataReceivedFromClientEventArgs e)
         {
-            if (clientIp == Extensions.getIpOnly(e.IpPort))
+            if (clientIp == Extensions.GetIpOnly(e.IpPort))
             {
-                Game game = JsonConvert.DeserializeObject<Game>(Encoding.UTF8.GetString(e.Data));
-                mainForm.UpdateGameData(game);
+                try
+                {
+                    Game game = JsonConvert.DeserializeObject<Game>(Encoding.UTF8.GetString(e.Data));
+                    mainForm.UpdateGameData(game);
+                }
+                catch (Exception) { }
             }
         }
     }

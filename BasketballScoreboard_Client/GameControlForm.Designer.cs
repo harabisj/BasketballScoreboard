@@ -105,9 +105,9 @@
             this.teamAGroupBox.Controls.Add(this.label2);
             this.teamAGroupBox.Controls.Add(this.teamAPointsLabel);
             this.teamAGroupBox.Location = new System.Drawing.Point(24, 94);
-            this.teamAGroupBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamAGroupBox.Margin = new System.Windows.Forms.Padding(6);
             this.teamAGroupBox.Name = "teamAGroupBox";
-            this.teamAGroupBox.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamAGroupBox.Padding = new System.Windows.Forms.Padding(6);
             this.teamAGroupBox.Size = new System.Drawing.Size(768, 208);
             this.teamAGroupBox.TabIndex = 1;
             this.teamAGroupBox.TabStop = false;
@@ -116,7 +116,7 @@
             // scoreAAdd3Button
             // 
             this.scoreAAdd3Button.Location = new System.Drawing.Point(608, 37);
-            this.scoreAAdd3Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.scoreAAdd3Button.Margin = new System.Windows.Forms.Padding(6);
             this.scoreAAdd3Button.Name = "scoreAAdd3Button";
             this.scoreAAdd3Button.Size = new System.Drawing.Size(108, 44);
             this.scoreAAdd3Button.TabIndex = 1;
@@ -127,7 +127,7 @@
             // timeoutsAAdd1Button
             // 
             this.timeoutsAAdd1Button.Location = new System.Drawing.Point(488, 148);
-            this.timeoutsAAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.timeoutsAAdd1Button.Margin = new System.Windows.Forms.Padding(6);
             this.timeoutsAAdd1Button.Name = "timeoutsAAdd1Button";
             this.timeoutsAAdd1Button.Size = new System.Drawing.Size(228, 44);
             this.timeoutsAAdd1Button.TabIndex = 1;
@@ -138,7 +138,7 @@
             // foulsAAdd1Button
             // 
             this.foulsAAdd1Button.Location = new System.Drawing.Point(488, 92);
-            this.foulsAAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.foulsAAdd1Button.Margin = new System.Windows.Forms.Padding(6);
             this.foulsAAdd1Button.Name = "foulsAAdd1Button";
             this.foulsAAdd1Button.Size = new System.Drawing.Size(228, 44);
             this.foulsAAdd1Button.TabIndex = 1;
@@ -149,7 +149,7 @@
             // scoreAAdd2Button
             // 
             this.scoreAAdd2Button.Location = new System.Drawing.Point(488, 37);
-            this.scoreAAdd2Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.scoreAAdd2Button.Margin = new System.Windows.Forms.Padding(6);
             this.scoreAAdd2Button.Name = "scoreAAdd2Button";
             this.scoreAAdd2Button.Size = new System.Drawing.Size(108, 44);
             this.scoreAAdd2Button.TabIndex = 1;
@@ -160,7 +160,7 @@
             // timeoutsASub1Button
             // 
             this.timeoutsASub1Button.Location = new System.Drawing.Point(248, 148);
-            this.timeoutsASub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.timeoutsASub1Button.Margin = new System.Windows.Forms.Padding(6);
             this.timeoutsASub1Button.Name = "timeoutsASub1Button";
             this.timeoutsASub1Button.Size = new System.Drawing.Size(228, 44);
             this.timeoutsASub1Button.TabIndex = 1;
@@ -171,7 +171,7 @@
             // foulsASub1Button
             // 
             this.foulsASub1Button.Location = new System.Drawing.Point(248, 92);
-            this.foulsASub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.foulsASub1Button.Margin = new System.Windows.Forms.Padding(6);
             this.foulsASub1Button.Name = "foulsASub1Button";
             this.foulsASub1Button.Size = new System.Drawing.Size(228, 44);
             this.foulsASub1Button.TabIndex = 1;
@@ -195,7 +195,7 @@
             // scoreAAdd1Button
             // 
             this.scoreAAdd1Button.Location = new System.Drawing.Point(368, 37);
-            this.scoreAAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.scoreAAdd1Button.Margin = new System.Windows.Forms.Padding(6);
             this.scoreAAdd1Button.Name = "scoreAAdd1Button";
             this.scoreAAdd1Button.Size = new System.Drawing.Size(108, 44);
             this.scoreAAdd1Button.TabIndex = 1;
@@ -232,7 +232,7 @@
             // scoreASub1Button
             // 
             this.scoreASub1Button.Location = new System.Drawing.Point(248, 37);
-            this.scoreASub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.scoreASub1Button.Margin = new System.Windows.Forms.Padding(6);
             this.scoreASub1Button.Name = "scoreASub1Button";
             this.scoreASub1Button.Size = new System.Drawing.Size(108, 44);
             this.scoreASub1Button.TabIndex = 1;
@@ -324,9 +324,9 @@
             this.teamBGroupBox.Controls.Add(this.label11);
             this.teamBGroupBox.Controls.Add(this.teamBPointsLabel);
             this.teamBGroupBox.Location = new System.Drawing.Point(808, 94);
-            this.teamBGroupBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamBGroupBox.Margin = new System.Windows.Forms.Padding(6);
             this.teamBGroupBox.Name = "teamBGroupBox";
-            this.teamBGroupBox.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamBGroupBox.Padding = new System.Windows.Forms.Padding(6);
             this.teamBGroupBox.Size = new System.Drawing.Size(768, 208);
             this.teamBGroupBox.TabIndex = 1;
             this.teamBGroupBox.TabStop = false;
@@ -335,7 +335,7 @@
             // scoreBAdd3Button
             // 
             this.scoreBAdd3Button.Location = new System.Drawing.Point(608, 37);
-            this.scoreBAdd3Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.scoreBAdd3Button.Margin = new System.Windows.Forms.Padding(6);
             this.scoreBAdd3Button.Name = "scoreBAdd3Button";
             this.scoreBAdd3Button.Size = new System.Drawing.Size(108, 44);
             this.scoreBAdd3Button.TabIndex = 1;
@@ -346,7 +346,7 @@
             // timeoutsBAdd1Button
             // 
             this.timeoutsBAdd1Button.Location = new System.Drawing.Point(488, 148);
-            this.timeoutsBAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.timeoutsBAdd1Button.Margin = new System.Windows.Forms.Padding(6);
             this.timeoutsBAdd1Button.Name = "timeoutsBAdd1Button";
             this.timeoutsBAdd1Button.Size = new System.Drawing.Size(228, 44);
             this.timeoutsBAdd1Button.TabIndex = 1;
@@ -357,7 +357,7 @@
             // foulsBAdd1Button
             // 
             this.foulsBAdd1Button.Location = new System.Drawing.Point(488, 92);
-            this.foulsBAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.foulsBAdd1Button.Margin = new System.Windows.Forms.Padding(6);
             this.foulsBAdd1Button.Name = "foulsBAdd1Button";
             this.foulsBAdd1Button.Size = new System.Drawing.Size(228, 44);
             this.foulsBAdd1Button.TabIndex = 1;
@@ -368,7 +368,7 @@
             // scoreBAdd2Button
             // 
             this.scoreBAdd2Button.Location = new System.Drawing.Point(488, 37);
-            this.scoreBAdd2Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.scoreBAdd2Button.Margin = new System.Windows.Forms.Padding(6);
             this.scoreBAdd2Button.Name = "scoreBAdd2Button";
             this.scoreBAdd2Button.Size = new System.Drawing.Size(108, 44);
             this.scoreBAdd2Button.TabIndex = 1;
@@ -379,7 +379,7 @@
             // timeoutsBSub1Button
             // 
             this.timeoutsBSub1Button.Location = new System.Drawing.Point(248, 148);
-            this.timeoutsBSub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.timeoutsBSub1Button.Margin = new System.Windows.Forms.Padding(6);
             this.timeoutsBSub1Button.Name = "timeoutsBSub1Button";
             this.timeoutsBSub1Button.Size = new System.Drawing.Size(228, 44);
             this.timeoutsBSub1Button.TabIndex = 1;
@@ -390,7 +390,7 @@
             // foulsBSub1Button
             // 
             this.foulsBSub1Button.Location = new System.Drawing.Point(248, 92);
-            this.foulsBSub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.foulsBSub1Button.Margin = new System.Windows.Forms.Padding(6);
             this.foulsBSub1Button.Name = "foulsBSub1Button";
             this.foulsBSub1Button.Size = new System.Drawing.Size(228, 44);
             this.foulsBSub1Button.TabIndex = 1;
@@ -414,7 +414,7 @@
             // scoreBAdd1Button
             // 
             this.scoreBAdd1Button.Location = new System.Drawing.Point(368, 37);
-            this.scoreBAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.scoreBAdd1Button.Margin = new System.Windows.Forms.Padding(6);
             this.scoreBAdd1Button.Name = "scoreBAdd1Button";
             this.scoreBAdd1Button.Size = new System.Drawing.Size(108, 44);
             this.scoreBAdd1Button.TabIndex = 1;
@@ -451,7 +451,7 @@
             // scoreBSub1Button
             // 
             this.scoreBSub1Button.Location = new System.Drawing.Point(248, 37);
-            this.scoreBSub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.scoreBSub1Button.Margin = new System.Windows.Forms.Padding(6);
             this.scoreBSub1Button.Name = "scoreBSub1Button";
             this.scoreBSub1Button.Size = new System.Drawing.Size(108, 44);
             this.scoreBSub1Button.TabIndex = 1;
@@ -501,7 +501,7 @@
             // clockStartButton
             // 
             this.clockStartButton.Location = new System.Drawing.Point(558, 23);
-            this.clockStartButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.clockStartButton.Margin = new System.Windows.Forms.Padding(6);
             this.clockStartButton.Name = "clockStartButton";
             this.clockStartButton.Size = new System.Drawing.Size(124, 60);
             this.clockStartButton.TabIndex = 2;
@@ -512,7 +512,7 @@
             // clockStopButton
             // 
             this.clockStopButton.Location = new System.Drawing.Point(910, 25);
-            this.clockStopButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.clockStopButton.Margin = new System.Windows.Forms.Padding(6);
             this.clockStopButton.Name = "clockStopButton";
             this.clockStopButton.Size = new System.Drawing.Size(124, 60);
             this.clockStopButton.TabIndex = 2;
@@ -523,7 +523,7 @@
             // runTimeoutButton
             // 
             this.runTimeoutButton.Location = new System.Drawing.Point(1348, 29);
-            this.runTimeoutButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.runTimeoutButton.Margin = new System.Windows.Forms.Padding(6);
             this.runTimeoutButton.Name = "runTimeoutButton";
             this.runTimeoutButton.Size = new System.Drawing.Size(228, 44);
             this.runTimeoutButton.TabIndex = 1;
@@ -538,7 +538,7 @@
             // periodSub1Button
             // 
             this.periodSub1Button.Location = new System.Drawing.Point(204, 29);
-            this.periodSub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.periodSub1Button.Margin = new System.Windows.Forms.Padding(6);
             this.periodSub1Button.Name = "periodSub1Button";
             this.periodSub1Button.Size = new System.Drawing.Size(74, 44);
             this.periodSub1Button.TabIndex = 1;
@@ -549,7 +549,7 @@
             // periodAdd1Button
             // 
             this.periodAdd1Button.Location = new System.Drawing.Point(286, 29);
-            this.periodAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.periodAdd1Button.Margin = new System.Windows.Forms.Padding(6);
             this.periodAdd1Button.Name = "periodAdd1Button";
             this.periodAdd1Button.Size = new System.Drawing.Size(74, 44);
             this.periodAdd1Button.TabIndex = 1;
@@ -576,7 +576,9 @@
             this.Controls.Add(this.periodAdd1Button);
             this.Controls.Add(this.periodSub1Button);
             this.Controls.Add(this.clockLabel);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "GameControlForm";
             this.Text = "BSc - Řídící panel";
             this.Load += new System.EventHandler(this.GameControlForm_Load);
