@@ -49,9 +49,9 @@
             this.label1.Location = new System.Drawing.Point(24, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 25);
+            this.label1.Size = new System.Drawing.Size(158, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "IPv4 serveru";
+            this.label1.Text = "Adresa serveru";
             // 
             // connectButton
             // 
