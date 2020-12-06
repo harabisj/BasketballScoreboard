@@ -36,29 +36,31 @@
             // ipListBox
             // 
             this.ipListBox.FormattingEnabled = true;
-            this.ipListBox.Location = new System.Drawing.Point(9, 18);
-            this.ipListBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ipListBox.ItemHeight = 25;
+            this.ipListBox.Location = new System.Drawing.Point(18, 35);
+            this.ipListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ipListBox.Name = "ipListBox";
-            this.ipListBox.Size = new System.Drawing.Size(138, 95);
+            this.ipListBox.Size = new System.Drawing.Size(272, 179);
             this.ipListBox.TabIndex = 0;
             this.ipListBox.SelectedIndexChanged += new System.EventHandler(this.ipListBox_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 5);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 13);
+            this.label1.Size = new System.Drawing.Size(290, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Vyberte IPv4 adresu serveru:";
             // 
             // startButton
             // 
             this.startButton.Enabled = false;
-            this.startButton.Location = new System.Drawing.Point(9, 118);
+            this.startButton.Location = new System.Drawing.Point(18, 227);
+            this.startButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(138, 23);
+            this.startButton.Size = new System.Drawing.Size(276, 44);
             this.startButton.TabIndex = 2;
             this.startButton.Text = "Spustit server";
             this.startButton.UseVisualStyleBackColor = true;
@@ -67,18 +69,18 @@
             // ConnectionForm
             // 
             this.AcceptButton = this.startButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(155, 146);
+            this.ClientSize = new System.Drawing.Size(310, 281);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ipListBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConnectionForm";
-            this.Text = "BasketballScoreboard";
+            this.Text = "BSs - Spuštění serveru";
             this.Load += new System.EventHandler(this.ConnectionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

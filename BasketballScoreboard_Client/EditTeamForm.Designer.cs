@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "1",
             "Karel"}, -1);
             this.addPlayerButton = new System.Windows.Forms.Button();
@@ -49,9 +49,10 @@
             // 
             // addPlayerButton
             // 
-            this.addPlayerButton.Location = new System.Drawing.Point(50, 67);
+            this.addPlayerButton.Location = new System.Drawing.Point(100, 129);
+            this.addPlayerButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.addPlayerButton.Name = "addPlayerButton";
-            this.addPlayerButton.Size = new System.Drawing.Size(139, 23);
+            this.addPlayerButton.Size = new System.Drawing.Size(278, 44);
             this.addPlayerButton.TabIndex = 8;
             this.addPlayerButton.Text = "Přidat hráče";
             this.addPlayerButton.UseVisualStyleBackColor = true;
@@ -59,9 +60,10 @@
             // 
             // removePlayerButton
             // 
-            this.removePlayerButton.Location = new System.Drawing.Point(12, 419);
+            this.removePlayerButton.Location = new System.Drawing.Point(24, 806);
+            this.removePlayerButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.removePlayerButton.Name = "removePlayerButton";
-            this.removePlayerButton.Size = new System.Drawing.Size(96, 23);
+            this.removePlayerButton.Size = new System.Drawing.Size(192, 44);
             this.removePlayerButton.TabIndex = 7;
             this.removePlayerButton.Text = "Odebrat hráče";
             this.removePlayerButton.UseVisualStyleBackColor = true;
@@ -74,10 +76,11 @@
             this.name});
             this.playersList.HideSelection = false;
             this.playersList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
-            this.playersList.Location = new System.Drawing.Point(12, 141);
+            listViewItem1});
+            this.playersList.Location = new System.Drawing.Point(24, 271);
+            this.playersList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.playersList.Name = "playersList";
-            this.playersList.Size = new System.Drawing.Size(204, 272);
+            this.playersList.Size = new System.Drawing.Size(404, 519);
             this.playersList.TabIndex = 6;
             this.playersList.UseCompatibleStateImageBehavior = false;
             this.playersList.View = System.Windows.Forms.View.Details;
@@ -97,17 +100,19 @@
             // 
             this.teamNameLabel.AutoSize = true;
             this.teamNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamNameLabel.Location = new System.Drawing.Point(12, 9);
+            this.teamNameLabel.Location = new System.Drawing.Point(24, 17);
+            this.teamNameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.teamNameLabel.Name = "teamNameLabel";
-            this.teamNameLabel.Size = new System.Drawing.Size(88, 16);
+            this.teamNameLabel.Size = new System.Drawing.Size(159, 30);
             this.teamNameLabel.TabIndex = 9;
             this.teamNameLabel.Text = "Název týmu";
             // 
             // playerNameTextBox
             // 
-            this.playerNameTextBox.Location = new System.Drawing.Point(50, 42);
+            this.playerNameTextBox.Location = new System.Drawing.Point(100, 81);
+            this.playerNameTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.playerNameTextBox.Name = "playerNameTextBox";
-            this.playerNameTextBox.Size = new System.Drawing.Size(139, 20);
+            this.playerNameTextBox.Size = new System.Drawing.Size(274, 31);
             this.playerNameTextBox.TabIndex = 10;
             // 
             // groupBox1
@@ -117,16 +122,19 @@
             this.groupBox1.Controls.Add(this.addPlayerButton);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.playerNameTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(12, 34);
+            this.groupBox1.Location = new System.Drawing.Point(24, 65);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(204, 100);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Size = new System.Drawing.Size(408, 192);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nový hráč";
             // 
             // playerIdNumeric
             // 
-            this.playerIdNumeric.Location = new System.Drawing.Point(50, 17);
+            this.playerIdNumeric.Location = new System.Drawing.Point(100, 33);
+            this.playerIdNumeric.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.playerIdNumeric.Maximum = new decimal(new int[] {
             20,
             0,
@@ -138,7 +146,7 @@
             0,
             0});
             this.playerIdNumeric.Name = "playerIdNumeric";
-            this.playerIdNumeric.Size = new System.Drawing.Size(139, 20);
+            this.playerIdNumeric.Size = new System.Drawing.Size(278, 31);
             this.playerIdNumeric.TabIndex = 13;
             this.playerIdNumeric.Value = new decimal(new int[] {
             1,
@@ -149,26 +157,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 45);
+            this.label2.Location = new System.Drawing.Point(12, 87);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(76, 25);
             this.label2.TabIndex = 12;
             this.label2.Text = "Jméno";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 20);
+            this.label1.Location = new System.Drawing.Point(12, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.Size = new System.Drawing.Size(60, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Číslo";
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(114, 419);
+            this.saveButton.Location = new System.Drawing.Point(228, 806);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(102, 23);
+            this.saveButton.Size = new System.Drawing.Size(204, 44);
             this.saveButton.TabIndex = 12;
             this.saveButton.Text = "Hotovo";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -177,19 +188,20 @@
             // EditTeamForm
             // 
             this.AcceptButton = this.addPlayerButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 452);
+            this.ClientSize = new System.Drawing.Size(450, 869);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.teamNameLabel);
             this.Controls.Add(this.removePlayerButton);
             this.Controls.Add(this.playersList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EditTeamForm";
-            this.Text = "Upravit hráče";
+            this.Text = "BSc - Upravit hráče";
             this.Load += new System.EventHandler(this.EditTeamForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

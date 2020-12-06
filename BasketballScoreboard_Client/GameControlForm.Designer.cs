@@ -79,9 +79,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.clockLabel.AutoSize = true;
             this.clockLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockLabel.Location = new System.Drawing.Point(347, 9);
+            this.clockLabel.Location = new System.Drawing.Point(694, 17);
+            this.clockLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.clockLabel.Name = "clockLabel";
-            this.clockLabel.Size = new System.Drawing.Size(108, 39);
+            this.clockLabel.Size = new System.Drawing.Size(214, 79);
             this.clockLabel.TabIndex = 0;
             this.clockLabel.Text = "00:00";
             // 
@@ -103,18 +104,21 @@
             this.teamAGroupBox.Controls.Add(this.teamAFoulsLabel);
             this.teamAGroupBox.Controls.Add(this.label2);
             this.teamAGroupBox.Controls.Add(this.teamAPointsLabel);
-            this.teamAGroupBox.Location = new System.Drawing.Point(12, 49);
+            this.teamAGroupBox.Location = new System.Drawing.Point(24, 94);
+            this.teamAGroupBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.teamAGroupBox.Name = "teamAGroupBox";
-            this.teamAGroupBox.Size = new System.Drawing.Size(384, 108);
+            this.teamAGroupBox.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamAGroupBox.Size = new System.Drawing.Size(768, 208);
             this.teamAGroupBox.TabIndex = 1;
             this.teamAGroupBox.TabStop = false;
             this.teamAGroupBox.Text = "teamA";
             // 
             // scoreAAdd3Button
             // 
-            this.scoreAAdd3Button.Location = new System.Drawing.Point(304, 19);
+            this.scoreAAdd3Button.Location = new System.Drawing.Point(608, 37);
+            this.scoreAAdd3Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.scoreAAdd3Button.Name = "scoreAAdd3Button";
-            this.scoreAAdd3Button.Size = new System.Drawing.Size(54, 23);
+            this.scoreAAdd3Button.Size = new System.Drawing.Size(108, 44);
             this.scoreAAdd3Button.TabIndex = 1;
             this.scoreAAdd3Button.Text = "+3";
             this.scoreAAdd3Button.UseVisualStyleBackColor = true;
@@ -122,9 +126,10 @@
             // 
             // timeoutsAAdd1Button
             // 
-            this.timeoutsAAdd1Button.Location = new System.Drawing.Point(244, 77);
+            this.timeoutsAAdd1Button.Location = new System.Drawing.Point(488, 148);
+            this.timeoutsAAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.timeoutsAAdd1Button.Name = "timeoutsAAdd1Button";
-            this.timeoutsAAdd1Button.Size = new System.Drawing.Size(114, 23);
+            this.timeoutsAAdd1Button.Size = new System.Drawing.Size(228, 44);
             this.timeoutsAAdd1Button.TabIndex = 1;
             this.timeoutsAAdd1Button.Text = "+1";
             this.timeoutsAAdd1Button.UseVisualStyleBackColor = true;
@@ -132,9 +137,10 @@
             // 
             // foulsAAdd1Button
             // 
-            this.foulsAAdd1Button.Location = new System.Drawing.Point(244, 48);
+            this.foulsAAdd1Button.Location = new System.Drawing.Point(488, 92);
+            this.foulsAAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.foulsAAdd1Button.Name = "foulsAAdd1Button";
-            this.foulsAAdd1Button.Size = new System.Drawing.Size(114, 23);
+            this.foulsAAdd1Button.Size = new System.Drawing.Size(228, 44);
             this.foulsAAdd1Button.TabIndex = 1;
             this.foulsAAdd1Button.Text = "+1";
             this.foulsAAdd1Button.UseVisualStyleBackColor = true;
@@ -142,9 +148,10 @@
             // 
             // scoreAAdd2Button
             // 
-            this.scoreAAdd2Button.Location = new System.Drawing.Point(244, 19);
+            this.scoreAAdd2Button.Location = new System.Drawing.Point(488, 37);
+            this.scoreAAdd2Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.scoreAAdd2Button.Name = "scoreAAdd2Button";
-            this.scoreAAdd2Button.Size = new System.Drawing.Size(54, 23);
+            this.scoreAAdd2Button.Size = new System.Drawing.Size(108, 44);
             this.scoreAAdd2Button.TabIndex = 1;
             this.scoreAAdd2Button.Text = "+2";
             this.scoreAAdd2Button.UseVisualStyleBackColor = true;
@@ -152,9 +159,10 @@
             // 
             // timeoutsASub1Button
             // 
-            this.timeoutsASub1Button.Location = new System.Drawing.Point(124, 77);
+            this.timeoutsASub1Button.Location = new System.Drawing.Point(248, 148);
+            this.timeoutsASub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.timeoutsASub1Button.Name = "timeoutsASub1Button";
-            this.timeoutsASub1Button.Size = new System.Drawing.Size(114, 23);
+            this.timeoutsASub1Button.Size = new System.Drawing.Size(228, 44);
             this.timeoutsASub1Button.TabIndex = 1;
             this.timeoutsASub1Button.Text = "-1";
             this.timeoutsASub1Button.UseVisualStyleBackColor = true;
@@ -162,9 +170,10 @@
             // 
             // foulsASub1Button
             // 
-            this.foulsASub1Button.Location = new System.Drawing.Point(124, 48);
+            this.foulsASub1Button.Location = new System.Drawing.Point(248, 92);
+            this.foulsASub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.foulsASub1Button.Name = "foulsASub1Button";
-            this.foulsASub1Button.Size = new System.Drawing.Size(114, 23);
+            this.foulsASub1Button.Size = new System.Drawing.Size(228, 44);
             this.foulsASub1Button.TabIndex = 1;
             this.foulsASub1Button.Text = "-1";
             this.foulsASub1Button.UseVisualStyleBackColor = true;
@@ -176,17 +185,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 79);
+            this.label6.Location = new System.Drawing.Point(12, 152);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 18);
+            this.label6.Size = new System.Drawing.Size(153, 36);
             this.label6.TabIndex = 0;
             this.label6.Text = "Timeouty:";
             // 
             // scoreAAdd1Button
             // 
-            this.scoreAAdd1Button.Location = new System.Drawing.Point(184, 19);
+            this.scoreAAdd1Button.Location = new System.Drawing.Point(368, 37);
+            this.scoreAAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.scoreAAdd1Button.Name = "scoreAAdd1Button";
-            this.scoreAAdd1Button.Size = new System.Drawing.Size(54, 23);
+            this.scoreAAdd1Button.Size = new System.Drawing.Size(108, 44);
             this.scoreAAdd1Button.TabIndex = 1;
             this.scoreAAdd1Button.Text = "+1";
             this.scoreAAdd1Button.UseVisualStyleBackColor = true;
@@ -198,9 +209,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 50);
+            this.label4.Location = new System.Drawing.Point(12, 96);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 18);
+            this.label4.Size = new System.Drawing.Size(103, 36);
             this.label4.TabIndex = 0;
             this.label4.Text = "Fouly:";
             // 
@@ -210,17 +222,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.teamATimeoutsLabel.AutoSize = true;
             this.teamATimeoutsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamATimeoutsLabel.Location = new System.Drawing.Point(90, 79);
+            this.teamATimeoutsLabel.Location = new System.Drawing.Point(180, 152);
+            this.teamATimeoutsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.teamATimeoutsLabel.Name = "teamATimeoutsLabel";
-            this.teamATimeoutsLabel.Size = new System.Drawing.Size(17, 18);
+            this.teamATimeoutsLabel.Size = new System.Drawing.Size(33, 36);
             this.teamATimeoutsLabel.TabIndex = 0;
             this.teamATimeoutsLabel.Text = "0";
             // 
             // scoreASub1Button
             // 
-            this.scoreASub1Button.Location = new System.Drawing.Point(124, 19);
+            this.scoreASub1Button.Location = new System.Drawing.Point(248, 37);
+            this.scoreASub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.scoreASub1Button.Name = "scoreASub1Button";
-            this.scoreASub1Button.Size = new System.Drawing.Size(54, 23);
+            this.scoreASub1Button.Size = new System.Drawing.Size(108, 44);
             this.scoreASub1Button.TabIndex = 1;
             this.scoreASub1Button.Text = "-1";
             this.scoreASub1Button.UseVisualStyleBackColor = true;
@@ -232,9 +246,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.teamAFoulsLabel.AutoSize = true;
             this.teamAFoulsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamAFoulsLabel.Location = new System.Drawing.Point(90, 50);
+            this.teamAFoulsLabel.Location = new System.Drawing.Point(180, 96);
+            this.teamAFoulsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.teamAFoulsLabel.Name = "teamAFoulsLabel";
-            this.teamAFoulsLabel.Size = new System.Drawing.Size(17, 18);
+            this.teamAFoulsLabel.Size = new System.Drawing.Size(33, 36);
             this.teamAFoulsLabel.TabIndex = 0;
             this.teamAFoulsLabel.Text = "0";
             // 
@@ -244,9 +259,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 21);
+            this.label2.Location = new System.Drawing.Point(12, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 18);
+            this.label2.Size = new System.Drawing.Size(97, 36);
             this.label2.TabIndex = 0;
             this.label2.Text = "Body:";
             // 
@@ -256,9 +272,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.teamAPointsLabel.AutoSize = true;
             this.teamAPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamAPointsLabel.Location = new System.Drawing.Point(90, 21);
+            this.teamAPointsLabel.Location = new System.Drawing.Point(180, 40);
+            this.teamAPointsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.teamAPointsLabel.Name = "teamAPointsLabel";
-            this.teamAPointsLabel.Size = new System.Drawing.Size(17, 18);
+            this.teamAPointsLabel.Size = new System.Drawing.Size(33, 36);
             this.teamAPointsLabel.TabIndex = 0;
             this.teamAPointsLabel.Text = "0";
             // 
@@ -268,9 +285,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 17);
+            this.label1.Location = new System.Drawing.Point(24, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 18);
+            this.label1.Size = new System.Drawing.Size(134, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Čtvrtina:";
             // 
@@ -280,9 +298,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.periodNumberLabel.AutoSize = true;
             this.periodNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.periodNumberLabel.Location = new System.Drawing.Point(79, 17);
+            this.periodNumberLabel.Location = new System.Drawing.Point(158, 33);
+            this.periodNumberLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.periodNumberLabel.Name = "periodNumberLabel";
-            this.periodNumberLabel.Size = new System.Drawing.Size(17, 18);
+            this.periodNumberLabel.Size = new System.Drawing.Size(33, 36);
             this.periodNumberLabel.TabIndex = 0;
             this.periodNumberLabel.Text = "0";
             // 
@@ -304,18 +323,21 @@
             this.teamBGroupBox.Controls.Add(this.teamBFoulsLabel);
             this.teamBGroupBox.Controls.Add(this.label11);
             this.teamBGroupBox.Controls.Add(this.teamBPointsLabel);
-            this.teamBGroupBox.Location = new System.Drawing.Point(404, 49);
+            this.teamBGroupBox.Location = new System.Drawing.Point(808, 94);
+            this.teamBGroupBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.teamBGroupBox.Name = "teamBGroupBox";
-            this.teamBGroupBox.Size = new System.Drawing.Size(384, 108);
+            this.teamBGroupBox.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamBGroupBox.Size = new System.Drawing.Size(768, 208);
             this.teamBGroupBox.TabIndex = 1;
             this.teamBGroupBox.TabStop = false;
             this.teamBGroupBox.Text = "teamB";
             // 
             // scoreBAdd3Button
             // 
-            this.scoreBAdd3Button.Location = new System.Drawing.Point(304, 19);
+            this.scoreBAdd3Button.Location = new System.Drawing.Point(608, 37);
+            this.scoreBAdd3Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.scoreBAdd3Button.Name = "scoreBAdd3Button";
-            this.scoreBAdd3Button.Size = new System.Drawing.Size(54, 23);
+            this.scoreBAdd3Button.Size = new System.Drawing.Size(108, 44);
             this.scoreBAdd3Button.TabIndex = 1;
             this.scoreBAdd3Button.Text = "+3";
             this.scoreBAdd3Button.UseVisualStyleBackColor = true;
@@ -323,9 +345,10 @@
             // 
             // timeoutsBAdd1Button
             // 
-            this.timeoutsBAdd1Button.Location = new System.Drawing.Point(244, 77);
+            this.timeoutsBAdd1Button.Location = new System.Drawing.Point(488, 148);
+            this.timeoutsBAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.timeoutsBAdd1Button.Name = "timeoutsBAdd1Button";
-            this.timeoutsBAdd1Button.Size = new System.Drawing.Size(114, 23);
+            this.timeoutsBAdd1Button.Size = new System.Drawing.Size(228, 44);
             this.timeoutsBAdd1Button.TabIndex = 1;
             this.timeoutsBAdd1Button.Text = "+1";
             this.timeoutsBAdd1Button.UseVisualStyleBackColor = true;
@@ -333,9 +356,10 @@
             // 
             // foulsBAdd1Button
             // 
-            this.foulsBAdd1Button.Location = new System.Drawing.Point(244, 48);
+            this.foulsBAdd1Button.Location = new System.Drawing.Point(488, 92);
+            this.foulsBAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.foulsBAdd1Button.Name = "foulsBAdd1Button";
-            this.foulsBAdd1Button.Size = new System.Drawing.Size(114, 23);
+            this.foulsBAdd1Button.Size = new System.Drawing.Size(228, 44);
             this.foulsBAdd1Button.TabIndex = 1;
             this.foulsBAdd1Button.Text = "+1";
             this.foulsBAdd1Button.UseVisualStyleBackColor = true;
@@ -343,9 +367,10 @@
             // 
             // scoreBAdd2Button
             // 
-            this.scoreBAdd2Button.Location = new System.Drawing.Point(244, 19);
+            this.scoreBAdd2Button.Location = new System.Drawing.Point(488, 37);
+            this.scoreBAdd2Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.scoreBAdd2Button.Name = "scoreBAdd2Button";
-            this.scoreBAdd2Button.Size = new System.Drawing.Size(54, 23);
+            this.scoreBAdd2Button.Size = new System.Drawing.Size(108, 44);
             this.scoreBAdd2Button.TabIndex = 1;
             this.scoreBAdd2Button.Text = "+2";
             this.scoreBAdd2Button.UseVisualStyleBackColor = true;
@@ -353,9 +378,10 @@
             // 
             // timeoutsBSub1Button
             // 
-            this.timeoutsBSub1Button.Location = new System.Drawing.Point(124, 77);
+            this.timeoutsBSub1Button.Location = new System.Drawing.Point(248, 148);
+            this.timeoutsBSub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.timeoutsBSub1Button.Name = "timeoutsBSub1Button";
-            this.timeoutsBSub1Button.Size = new System.Drawing.Size(114, 23);
+            this.timeoutsBSub1Button.Size = new System.Drawing.Size(228, 44);
             this.timeoutsBSub1Button.TabIndex = 1;
             this.timeoutsBSub1Button.Text = "-1";
             this.timeoutsBSub1Button.UseVisualStyleBackColor = true;
@@ -363,9 +389,10 @@
             // 
             // foulsBSub1Button
             // 
-            this.foulsBSub1Button.Location = new System.Drawing.Point(124, 48);
+            this.foulsBSub1Button.Location = new System.Drawing.Point(248, 92);
+            this.foulsBSub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.foulsBSub1Button.Name = "foulsBSub1Button";
-            this.foulsBSub1Button.Size = new System.Drawing.Size(114, 23);
+            this.foulsBSub1Button.Size = new System.Drawing.Size(228, 44);
             this.foulsBSub1Button.TabIndex = 1;
             this.foulsBSub1Button.Text = "-1";
             this.foulsBSub1Button.UseVisualStyleBackColor = true;
@@ -377,17 +404,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 79);
+            this.label7.Location = new System.Drawing.Point(12, 152);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 18);
+            this.label7.Size = new System.Drawing.Size(153, 36);
             this.label7.TabIndex = 0;
             this.label7.Text = "Timeouty:";
             // 
             // scoreBAdd1Button
             // 
-            this.scoreBAdd1Button.Location = new System.Drawing.Point(184, 19);
+            this.scoreBAdd1Button.Location = new System.Drawing.Point(368, 37);
+            this.scoreBAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.scoreBAdd1Button.Name = "scoreBAdd1Button";
-            this.scoreBAdd1Button.Size = new System.Drawing.Size(54, 23);
+            this.scoreBAdd1Button.Size = new System.Drawing.Size(108, 44);
             this.scoreBAdd1Button.TabIndex = 1;
             this.scoreBAdd1Button.Text = "+1";
             this.scoreBAdd1Button.UseVisualStyleBackColor = true;
@@ -399,9 +428,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 50);
+            this.label8.Location = new System.Drawing.Point(12, 96);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 18);
+            this.label8.Size = new System.Drawing.Size(103, 36);
             this.label8.TabIndex = 0;
             this.label8.Text = "Fouly:";
             // 
@@ -411,17 +441,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.teamBTimeoutsLabel.AutoSize = true;
             this.teamBTimeoutsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamBTimeoutsLabel.Location = new System.Drawing.Point(90, 79);
+            this.teamBTimeoutsLabel.Location = new System.Drawing.Point(180, 152);
+            this.teamBTimeoutsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.teamBTimeoutsLabel.Name = "teamBTimeoutsLabel";
-            this.teamBTimeoutsLabel.Size = new System.Drawing.Size(17, 18);
+            this.teamBTimeoutsLabel.Size = new System.Drawing.Size(33, 36);
             this.teamBTimeoutsLabel.TabIndex = 0;
             this.teamBTimeoutsLabel.Text = "0";
             // 
             // scoreBSub1Button
             // 
-            this.scoreBSub1Button.Location = new System.Drawing.Point(124, 19);
+            this.scoreBSub1Button.Location = new System.Drawing.Point(248, 37);
+            this.scoreBSub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.scoreBSub1Button.Name = "scoreBSub1Button";
-            this.scoreBSub1Button.Size = new System.Drawing.Size(54, 23);
+            this.scoreBSub1Button.Size = new System.Drawing.Size(108, 44);
             this.scoreBSub1Button.TabIndex = 1;
             this.scoreBSub1Button.Text = "-1";
             this.scoreBSub1Button.UseVisualStyleBackColor = true;
@@ -433,9 +465,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.teamBFoulsLabel.AutoSize = true;
             this.teamBFoulsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamBFoulsLabel.Location = new System.Drawing.Point(90, 50);
+            this.teamBFoulsLabel.Location = new System.Drawing.Point(180, 96);
+            this.teamBFoulsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.teamBFoulsLabel.Name = "teamBFoulsLabel";
-            this.teamBFoulsLabel.Size = new System.Drawing.Size(17, 18);
+            this.teamBFoulsLabel.Size = new System.Drawing.Size(33, 36);
             this.teamBFoulsLabel.TabIndex = 0;
             this.teamBFoulsLabel.Text = "0";
             // 
@@ -445,9 +478,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 21);
+            this.label11.Location = new System.Drawing.Point(12, 40);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 18);
+            this.label11.Size = new System.Drawing.Size(97, 36);
             this.label11.TabIndex = 0;
             this.label11.Text = "Body:";
             // 
@@ -457,17 +491,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.teamBPointsLabel.AutoSize = true;
             this.teamBPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamBPointsLabel.Location = new System.Drawing.Point(90, 21);
+            this.teamBPointsLabel.Location = new System.Drawing.Point(180, 40);
+            this.teamBPointsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.teamBPointsLabel.Name = "teamBPointsLabel";
-            this.teamBPointsLabel.Size = new System.Drawing.Size(17, 18);
+            this.teamBPointsLabel.Size = new System.Drawing.Size(33, 36);
             this.teamBPointsLabel.TabIndex = 0;
             this.teamBPointsLabel.Text = "0";
             // 
             // clockStartButton
             // 
-            this.clockStartButton.Location = new System.Drawing.Point(279, 12);
+            this.clockStartButton.Location = new System.Drawing.Point(558, 23);
+            this.clockStartButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.clockStartButton.Name = "clockStartButton";
-            this.clockStartButton.Size = new System.Drawing.Size(62, 31);
+            this.clockStartButton.Size = new System.Drawing.Size(124, 60);
             this.clockStartButton.TabIndex = 2;
             this.clockStartButton.Text = "Start";
             this.clockStartButton.UseVisualStyleBackColor = true;
@@ -475,9 +511,10 @@
             // 
             // clockStopButton
             // 
-            this.clockStopButton.Location = new System.Drawing.Point(455, 13);
+            this.clockStopButton.Location = new System.Drawing.Point(910, 25);
+            this.clockStopButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.clockStopButton.Name = "clockStopButton";
-            this.clockStopButton.Size = new System.Drawing.Size(62, 31);
+            this.clockStopButton.Size = new System.Drawing.Size(124, 60);
             this.clockStopButton.TabIndex = 2;
             this.clockStopButton.Text = "Stop";
             this.clockStopButton.UseVisualStyleBackColor = true;
@@ -485,9 +522,10 @@
             // 
             // runTimeoutButton
             // 
-            this.runTimeoutButton.Location = new System.Drawing.Point(674, 15);
+            this.runTimeoutButton.Location = new System.Drawing.Point(1348, 29);
+            this.runTimeoutButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.runTimeoutButton.Name = "runTimeoutButton";
-            this.runTimeoutButton.Size = new System.Drawing.Size(114, 23);
+            this.runTimeoutButton.Size = new System.Drawing.Size(228, 44);
             this.runTimeoutButton.TabIndex = 1;
             this.runTimeoutButton.Text = "Spustit timeout";
             this.runTimeoutButton.UseVisualStyleBackColor = true;
@@ -499,9 +537,10 @@
             // 
             // periodSub1Button
             // 
-            this.periodSub1Button.Location = new System.Drawing.Point(102, 15);
+            this.periodSub1Button.Location = new System.Drawing.Point(204, 29);
+            this.periodSub1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.periodSub1Button.Name = "periodSub1Button";
-            this.periodSub1Button.Size = new System.Drawing.Size(37, 23);
+            this.periodSub1Button.Size = new System.Drawing.Size(74, 44);
             this.periodSub1Button.TabIndex = 1;
             this.periodSub1Button.Text = "-1";
             this.periodSub1Button.UseVisualStyleBackColor = true;
@@ -509,9 +548,10 @@
             // 
             // periodAdd1Button
             // 
-            this.periodAdd1Button.Location = new System.Drawing.Point(143, 15);
+            this.periodAdd1Button.Location = new System.Drawing.Point(286, 29);
+            this.periodAdd1Button.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.periodAdd1Button.Name = "periodAdd1Button";
-            this.periodAdd1Button.Size = new System.Drawing.Size(37, 23);
+            this.periodAdd1Button.Size = new System.Drawing.Size(74, 44);
             this.periodAdd1Button.TabIndex = 1;
             this.periodAdd1Button.Text = "+1";
             this.periodAdd1Button.UseVisualStyleBackColor = true;
@@ -523,9 +563,9 @@
             // 
             // GameControlForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 169);
+            this.ClientSize = new System.Drawing.Size(1600, 325);
             this.Controls.Add(this.clockStopButton);
             this.Controls.Add(this.clockStartButton);
             this.Controls.Add(this.teamBGroupBox);
@@ -536,8 +576,9 @@
             this.Controls.Add(this.periodAdd1Button);
             this.Controls.Add(this.periodSub1Button);
             this.Controls.Add(this.clockLabel);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "GameControlForm";
-            this.Text = "BasketballScoreboard";
+            this.Text = "BSc - Řídící panel";
             this.Load += new System.EventHandler(this.GameControlForm_Load);
             this.teamAGroupBox.ResumeLayout(false);
             this.teamAGroupBox.PerformLayout();

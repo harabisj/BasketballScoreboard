@@ -35,27 +35,30 @@
             // 
             // ipTextBox
             // 
-            this.ipTextBox.Location = new System.Drawing.Point(15, 25);
+            this.ipTextBox.Location = new System.Drawing.Point(30, 48);
+            this.ipTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ipTextBox.Name = "ipTextBox";
-            this.ipTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ipTextBox.Size = new System.Drawing.Size(196, 31);
             this.ipTextBox.TabIndex = 0;
             this.ipTextBox.TextChanged += new System.EventHandler(this.ipTextBox_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(24, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(132, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "IPv4 serveru";
             // 
             // connectButton
             // 
             this.connectButton.Enabled = false;
-            this.connectButton.Location = new System.Drawing.Point(15, 50);
+            this.connectButton.Location = new System.Drawing.Point(30, 96);
+            this.connectButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.connectButton.Name = "connectButton";
-            this.connectButton.Size = new System.Drawing.Size(100, 23);
+            this.connectButton.Size = new System.Drawing.Size(200, 44);
             this.connectButton.TabIndex = 2;
             this.connectButton.Text = "Připojit se";
             this.connectButton.UseVisualStyleBackColor = true;
@@ -64,17 +67,18 @@
             // ConnectionForm
             // 
             this.AcceptButton = this.connectButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(131, 85);
+            this.ClientSize = new System.Drawing.Size(262, 163);
             this.Controls.Add(this.connectButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ipTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConnectionForm";
-            this.Text = "ConnectionForm";
+            this.Text = "BSc - Připojit k serveru";
             this.ResumeLayout(false);
             this.PerformLayout();
 
