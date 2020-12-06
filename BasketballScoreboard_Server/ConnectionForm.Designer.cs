@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConnectionForm));
             this.ipListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
@@ -38,7 +39,7 @@
             this.ipListBox.FormattingEnabled = true;
             this.ipListBox.ItemHeight = 25;
             this.ipListBox.Location = new System.Drawing.Point(18, 35);
-            this.ipListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ipListBox.Margin = new System.Windows.Forms.Padding(4);
             this.ipListBox.Name = "ipListBox";
             this.ipListBox.Size = new System.Drawing.Size(272, 179);
             this.ipListBox.TabIndex = 0;
@@ -58,7 +59,7 @@
             // 
             this.startButton.Enabled = false;
             this.startButton.Location = new System.Drawing.Point(18, 227);
-            this.startButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.startButton.Margin = new System.Windows.Forms.Padding(6);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(276, 44);
             this.startButton.TabIndex = 2;
@@ -76,7 +77,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ipListBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConnectionForm";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameInitForm));
             this.label1 = new System.Windows.Forms.Label();
             this.periodLengthNumeric = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,7 +57,7 @@
             // periodLengthNumeric
             // 
             this.periodLengthNumeric.Location = new System.Drawing.Point(188, 21);
-            this.periodLengthNumeric.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.periodLengthNumeric.Margin = new System.Windows.Forms.Padding(6);
             this.periodLengthNumeric.Maximum = new decimal(new int[] {
             30,
             0,
@@ -90,7 +91,7 @@
             // createGameButton
             // 
             this.createGameButton.Location = new System.Drawing.Point(24, 262);
-            this.createGameButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.createGameButton.Margin = new System.Windows.Forms.Padding(6);
             this.createGameButton.Name = "createGameButton";
             this.createGameButton.Size = new System.Drawing.Size(458, 44);
             this.createGameButton.TabIndex = 3;
@@ -111,7 +112,7 @@
             // teamANameTextBox
             // 
             this.teamANameTextBox.Location = new System.Drawing.Point(26, 152);
-            this.teamANameTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamANameTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.teamANameTextBox.Name = "teamANameTextBox";
             this.teamANameTextBox.Size = new System.Drawing.Size(292, 31);
             this.teamANameTextBox.TabIndex = 5;
@@ -120,7 +121,7 @@
             // teamBNameTextBox
             // 
             this.teamBNameTextBox.Location = new System.Drawing.Point(26, 202);
-            this.teamBNameTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamBNameTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.teamBNameTextBox.Name = "teamBNameTextBox";
             this.teamBNameTextBox.Size = new System.Drawing.Size(292, 31);
             this.teamBNameTextBox.TabIndex = 6;
@@ -129,7 +130,7 @@
             // teamAPlayersButton
             // 
             this.teamAPlayersButton.Location = new System.Drawing.Point(334, 150);
-            this.teamAPlayersButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamAPlayersButton.Margin = new System.Windows.Forms.Padding(6);
             this.teamAPlayersButton.Name = "teamAPlayersButton";
             this.teamAPlayersButton.Size = new System.Drawing.Size(150, 44);
             this.teamAPlayersButton.TabIndex = 7;
@@ -140,7 +141,7 @@
             // teamBPlayersButton
             // 
             this.teamBPlayersButton.Location = new System.Drawing.Point(334, 200);
-            this.teamBPlayersButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.teamBPlayersButton.Margin = new System.Windows.Forms.Padding(6);
             this.teamBPlayersButton.Name = "teamBPlayersButton";
             this.teamBPlayersButton.Size = new System.Drawing.Size(150, 44);
             this.teamBPlayersButton.TabIndex = 8;
@@ -161,7 +162,7 @@
             // defaultTimeoutsNumeric
             // 
             this.defaultTimeoutsNumeric.Location = new System.Drawing.Point(188, 69);
-            this.defaultTimeoutsNumeric.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.defaultTimeoutsNumeric.Margin = new System.Windows.Forms.Padding(6);
             this.defaultTimeoutsNumeric.Maximum = new decimal(new int[] {
             10,
             0,
@@ -194,7 +195,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "GameInitForm";
             this.Text = "BSc - Nastavení hry";

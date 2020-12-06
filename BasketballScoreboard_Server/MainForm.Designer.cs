@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.serverStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.clockLabel = new System.Windows.Forms.Label();
@@ -239,7 +240,8 @@
             this.Controls.Add(this.teamANameLabel);
             this.Controls.Add(this.clockLabel);
             this.Controls.Add(this.statusStrip);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MinimumSize = new System.Drawing.Size(2534, 1319);
             this.Name = "MainForm";
             this.Text = "BSs - Panel";

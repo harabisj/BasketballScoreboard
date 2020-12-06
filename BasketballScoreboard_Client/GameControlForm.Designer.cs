@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameControlForm));
             this.clockLabel = new System.Windows.Forms.Label();
             this.teamAGroupBox = new System.Windows.Forms.GroupBox();
             this.scoreAAdd3Button = new System.Windows.Forms.Button();
@@ -577,6 +578,7 @@
             this.Controls.Add(this.periodSub1Button);
             this.Controls.Add(this.clockLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "GameControlForm";
