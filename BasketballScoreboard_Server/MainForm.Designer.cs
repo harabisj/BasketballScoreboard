@@ -52,10 +52,10 @@
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.serverStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 1268);
+            this.statusStrip.Location = new System.Drawing.Point(0, 967);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 28, 0);
-            this.statusStrip.Size = new System.Drawing.Size(2528, 42);
+            this.statusStrip.Size = new System.Drawing.Size(1894, 42);
             this.statusStrip.TabIndex = 0;
             this.statusStrip.Text = "statusStrip1";
             // 
@@ -71,7 +71,7 @@
             this.clockLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.clockLabel.AutoSize = true;
             this.clockLabel.Font = new System.Drawing.Font("DSEG7 Classic", 127.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockLabel.Location = new System.Drawing.Point(614, 35);
+            this.clockLabel.Location = new System.Drawing.Point(297, 35);
             this.clockLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.clockLabel.Name = "clockLabel";
             this.clockLabel.Size = new System.Drawing.Size(1323, 341);
@@ -83,7 +83,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1046, 500);
+            this.label1.Location = new System.Drawing.Point(729, 500);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(477, 108);
@@ -96,7 +96,7 @@
             this.currentPeriodLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.currentPeriodLabel.AutoSize = true;
             this.currentPeriodLabel.Font = new System.Drawing.Font("DSEG7 Classic", 63.74999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentPeriodLabel.Location = new System.Drawing.Point(1180, 619);
+            this.currentPeriodLabel.Location = new System.Drawing.Point(863, 619);
             this.currentPeriodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentPeriodLabel.Name = "currentPeriodLabel";
             this.currentPeriodLabel.Size = new System.Drawing.Size(211, 170);
@@ -118,7 +118,7 @@
             // 
             this.teamBNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.teamBNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamBNameLabel.Location = new System.Drawing.Point(1476, 487);
+            this.teamBNameLabel.Location = new System.Drawing.Point(842, 487);
             this.teamBNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.teamBNameLabel.Name = "teamBNameLabel";
             this.teamBNameLabel.Size = new System.Drawing.Size(1024, 133);
@@ -141,7 +141,7 @@
             // 
             this.teamBPointsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.teamBPointsLabel.Font = new System.Drawing.Font("DSEG7 Classic", 92.24999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamBPointsLabel.Location = new System.Drawing.Point(1998, 625);
+            this.teamBPointsLabel.Location = new System.Drawing.Point(1364, 625);
             this.teamBPointsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.teamBPointsLabel.Name = "teamBPointsLabel";
             this.teamBPointsLabel.Size = new System.Drawing.Size(508, 271);
@@ -154,7 +154,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1152, 952);
+            this.label4.Location = new System.Drawing.Point(835, 952);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(268, 79);
@@ -167,7 +167,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(906, 1060);
+            this.label5.Location = new System.Drawing.Point(589, 1060);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(770, 79);
@@ -202,7 +202,7 @@
             this.teamBFoulsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.teamBFoulsLabel.AutoSize = true;
             this.teamBFoulsLabel.Font = new System.Drawing.Font("DSEG7 Classic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamBFoulsLabel.Location = new System.Drawing.Point(1724, 952);
+            this.teamBFoulsLabel.Location = new System.Drawing.Point(1090, 952);
             this.teamBFoulsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.teamBFoulsLabel.Name = "teamBFoulsLabel";
             this.teamBFoulsLabel.Size = new System.Drawing.Size(87, 70);
@@ -214,7 +214,7 @@
             this.teamBTimeoutsLeftLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.teamBTimeoutsLeftLabel.AutoSize = true;
             this.teamBTimeoutsLeftLabel.Font = new System.Drawing.Font("DSEG7 Classic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamBTimeoutsLeftLabel.Location = new System.Drawing.Point(1724, 1054);
+            this.teamBTimeoutsLeftLabel.Location = new System.Drawing.Point(1090, 1054);
             this.teamBTimeoutsLeftLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.teamBTimeoutsLeftLabel.Name = "teamBTimeoutsLeftLabel";
             this.teamBTimeoutsLeftLabel.Size = new System.Drawing.Size(87, 70);
@@ -225,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2528, 1310);
+            this.ClientSize = new System.Drawing.Size(1894, 1009);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.teamBPointsLabel);
             this.Controls.Add(this.teamAPointsLabel);
@@ -242,7 +242,7 @@
             this.Controls.Add(this.statusStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.MinimumSize = new System.Drawing.Size(2534, 1319);
+            this.MinimumSize = new System.Drawing.Size(1920, 1080);
             this.Name = "MainForm";
             this.Text = "BSs - Panel";
             this.statusStrip.ResumeLayout(false);
