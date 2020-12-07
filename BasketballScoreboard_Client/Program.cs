@@ -8,6 +8,8 @@ namespace BasketballScoreboard_Client
 {
     static class Program
     {
+        public static GameControlForm gameControlForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

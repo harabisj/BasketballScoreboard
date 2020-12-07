@@ -66,12 +66,28 @@ namespace BasketballScoreboard_Client
          */
         public void Connected(object sender, EventArgs e)
         {
-            connectionForm.Hide();
-            gameInitForm.Show();
+            connectionForm.InvokeIfRequired(() =>
+            {
+                connectionForm.Hide();
+            });
+
+            if (Game.started)
+                Program.gameControlForm.InvokeIfRequired(() => { 
+                    Program.gameControlForm.Show();
+                });
+            else
+                gameInitForm.InvokeIfRequired(() => {
+                    gameInitForm.Show();
+                });
+
+
         }
 
         public void Disconnected(object sender, EventArgs e)
         {
+            if (Game.started)
+                Program.gameControlForm.StopAllClocks();
+
             DialogResult dr = MessageBox.Show(
                 "Spojení se serverem bylo přeruešno... Opakovat pokus o připojení?",
                 "Chyba spojení",
@@ -97,7 +113,19 @@ namespace BasketballScoreboard_Client
             /**
              * Serialize the game data and send to the server
              */
-            client.Send(JsonConvert.SerializeObject(new Game()));
+            try
+            {
+                client.Send(JsonConvert.SerializeObject(new Game()));
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(
+                    "Data se ńepodařilo odeslat: " + e.Message,
+                    "Chyba spojení",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
         }
     }
 }

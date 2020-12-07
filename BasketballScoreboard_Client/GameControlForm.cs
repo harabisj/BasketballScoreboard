@@ -24,6 +24,7 @@ namespace BasketballScoreboard_Client
         public GameControlForm(ConnectionsManager connectionsManager)
         {
             InitializeComponent();
+            Program.gameControlForm = this;
 
             this.connectionsManager = connectionsManager;
 
@@ -106,6 +107,12 @@ namespace BasketballScoreboard_Client
         private void SendGameData()
         {
             connectionsManager.SendGameData();
+        }
+
+        public void StopAllClocks()
+        {
+            mainClock.Stop();
+            timeoutClock.Stop();
         }
 
 

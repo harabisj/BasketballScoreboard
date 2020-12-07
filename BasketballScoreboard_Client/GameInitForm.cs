@@ -105,7 +105,7 @@ namespace BasketballScoreboard_Client
             if (Game.started)
             {
                 Hide();
-                new GameControlForm(connectionsManager).Show();
+                Program.gameControlForm.Show();
             }
         }
     }
