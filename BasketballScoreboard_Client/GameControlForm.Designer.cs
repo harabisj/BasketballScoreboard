@@ -214,9 +214,9 @@
             this.label4.Location = new System.Drawing.Point(12, 96);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 36);
+            this.label4.Size = new System.Drawing.Size(204, 72);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Fouly:";
+            this.label4.Text = "Fauly:";
             // 
             // teamATimeoutsLabel
             // 
@@ -433,9 +433,9 @@
             this.label8.Location = new System.Drawing.Point(12, 96);
             this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 36);
+            this.label8.Size = new System.Drawing.Size(204, 72);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Fouly:";
+            this.label8.Text = "Fauly:";
             // 
             // teamBTimeoutsLabel
             // 

@@ -111,7 +111,7 @@
             this.teamANameLabel.Name = "teamANameLabel";
             this.teamANameLabel.Size = new System.Drawing.Size(1024, 133);
             this.teamANameLabel.TabIndex = 1;
-            this.teamANameLabel.Text = "TEAM_A";
+            this.teamANameLabel.Text = "-";
             this.teamANameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // teamBNameLabel
@@ -123,7 +123,7 @@
             this.teamBNameLabel.Name = "teamBNameLabel";
             this.teamBNameLabel.Size = new System.Drawing.Size(1024, 133);
             this.teamBNameLabel.TabIndex = 1;
-            this.teamBNameLabel.Text = "TEAM_B";
+            this.teamBNameLabel.Text = "-";
             this.teamBNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // teamAPointsLabel

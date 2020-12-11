@@ -79,7 +79,7 @@
             this.addFoulButton.Name = "addFoulButton";
             this.addFoulButton.Size = new System.Drawing.Size(404, 43);
             this.addFoulButton.TabIndex = 8;
-            this.addFoulButton.Text = "Odebrat foul";
+            this.addFoulButton.Text = "Odebrat faul";
             this.addFoulButton.UseVisualStyleBackColor = true;
             this.addFoulButton.Click += new System.EventHandler(this.removeFoulButton_Click);
             // 
@@ -95,7 +95,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RemoveFoulForm";
-            this.Text = "BSc - Odebrat foul";
+            this.Text = "BSc - Odebrat faul";
             this.ResumeLayout(false);
 
         }
