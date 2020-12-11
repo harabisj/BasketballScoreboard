@@ -50,7 +50,7 @@
             // addPlayerButton
             // 
             this.addPlayerButton.Location = new System.Drawing.Point(100, 129);
-            this.addPlayerButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.addPlayerButton.Margin = new System.Windows.Forms.Padding(6);
             this.addPlayerButton.Name = "addPlayerButton";
             this.addPlayerButton.Size = new System.Drawing.Size(278, 44);
             this.addPlayerButton.TabIndex = 8;
@@ -61,7 +61,7 @@
             // removePlayerButton
             // 
             this.removePlayerButton.Location = new System.Drawing.Point(24, 806);
-            this.removePlayerButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.removePlayerButton.Margin = new System.Windows.Forms.Padding(6);
             this.removePlayerButton.Name = "removePlayerButton";
             this.removePlayerButton.Size = new System.Drawing.Size(192, 44);
             this.removePlayerButton.TabIndex = 7;
@@ -74,11 +74,12 @@
             this.playersList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id,
             this.name});
+            this.playersList.FullRowSelect = true;
             this.playersList.HideSelection = false;
             this.playersList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
             this.playersList.Location = new System.Drawing.Point(24, 271);
-            this.playersList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.playersList.Margin = new System.Windows.Forms.Padding(6);
             this.playersList.Name = "playersList";
             this.playersList.Size = new System.Drawing.Size(404, 519);
             this.playersList.TabIndex = 6;
@@ -110,7 +111,7 @@
             // playerNameTextBox
             // 
             this.playerNameTextBox.Location = new System.Drawing.Point(100, 81);
-            this.playerNameTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.playerNameTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.playerNameTextBox.Name = "playerNameTextBox";
             this.playerNameTextBox.Size = new System.Drawing.Size(274, 31);
             this.playerNameTextBox.TabIndex = 10;
@@ -123,9 +124,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.playerNameTextBox);
             this.groupBox1.Location = new System.Drawing.Point(24, 65);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(408, 192);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
@@ -134,7 +135,7 @@
             // playerIdNumeric
             // 
             this.playerIdNumeric.Location = new System.Drawing.Point(100, 33);
-            this.playerIdNumeric.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.playerIdNumeric.Margin = new System.Windows.Forms.Padding(6);
             this.playerIdNumeric.Maximum = new decimal(new int[] {
             20,
             0,
@@ -177,7 +178,7 @@
             // saveButton
             // 
             this.saveButton.Location = new System.Drawing.Point(228, 806);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(6);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(204, 44);
             this.saveButton.TabIndex = 12;
@@ -197,7 +198,7 @@
             this.Controls.Add(this.removePlayerButton);
             this.Controls.Add(this.playersList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EditTeamForm";

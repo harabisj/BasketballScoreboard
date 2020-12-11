@@ -169,12 +169,12 @@ namespace BasketballScoreboard_Client
 
         private void foulsASub1Button_Click(object sender, EventArgs e)
         {
-            // TODO
+            new RemoveFoulForm(Game.teamA).ShowDialog();
         }
 
         private void foulsAAdd1Button_Click(object sender, EventArgs e)
         {
-            // TODO
+            new AddFoulForm(Game.teamA).ShowDialog();
         }
 
 
@@ -231,12 +231,12 @@ namespace BasketballScoreboard_Client
 
         private void foulsBSub1Button_Click(object sender, EventArgs e)
         {
-            // TODO
+            new RemoveFoulForm(Game.teamB).ShowDialog();
         }
 
         private void foulsBAdd1Button_Click(object sender, EventArgs e)
         {
-            // TODO
+            new AddFoulForm(Game.teamB).ShowDialog();
         }
 
 

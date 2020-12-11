@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RemoveFoulForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveFoulForm.Designer.cs">
+      <DependentUpon>RemoveFoulForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFoulForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFoulForm.Designer.cs">
+      <DependentUpon>AddFoulForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConnectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimerManager.cs" />
+    <EmbeddedResource Include="RemoveFoulForm.resx">
+      <DependentUpon>RemoveFoulForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFoulForm.resx">
+      <DependentUpon>AddFoulForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConnectionForm.resx">
       <DependentUpon>ConnectionForm.cs</DependentUpon>
     </EmbeddedResource>
