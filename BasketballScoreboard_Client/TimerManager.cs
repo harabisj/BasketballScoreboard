@@ -13,10 +13,10 @@ namespace BasketballScoreboard_Client
         private Func<int, bool> onTimerChange;
         private Action onTimerStop;
 
-        private int start_value;
+        private int startValue;
         private int counter;
 
-        public TimerManager(Timer timer, int start_value, Func<int, bool> onTimerChange, Action onTimerStop)
+        public TimerManager(Timer timer, int startValue, Func<int, bool> onTimerChange, Action onTimerStop)
         {
             this.timer = timer;
             Stop();
@@ -24,8 +24,8 @@ namespace BasketballScoreboard_Client
             this.onTimerChange = onTimerChange;
             this.onTimerStop = onTimerStop;
 
-            this.start_value = start_value;
-            this.counter = start_value;
+            this.startValue = startValue;
+            this.counter = startValue;
 
             onTimerChange.Invoke(counter);
         }
@@ -44,7 +44,7 @@ namespace BasketballScoreboard_Client
         public void Reset()
         {
             timer.Stop();
-            counter = start_value;
+            counter = startValue;
             onTimerChange.Invoke(counter);
         }
 
