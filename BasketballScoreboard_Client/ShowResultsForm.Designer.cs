@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "1",
             "Karel"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "1",
             "Karel"}, -1);
             this.teamANameLabel = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             this.teamANameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teamANameLabel.Location = new System.Drawing.Point(12, 9);
             this.teamANameLabel.Name = "teamANameLabel";
-            this.teamANameLabel.Size = new System.Drawing.Size(206, 58);
+            this.teamANameLabel.Size = new System.Drawing.Size(103, 29);
             this.teamANameLabel.TabIndex = 0;
             this.teamANameLabel.Text = "Team A";
             // 
@@ -67,7 +67,7 @@
             this.teamAPlayersList.FullRowSelect = true;
             this.teamAPlayersList.HideSelection = false;
             this.teamAPlayersList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem1});
             this.teamAPlayersList.Location = new System.Drawing.Point(17, 51);
             this.teamAPlayersList.Margin = new System.Windows.Forms.Padding(6);
             this.teamAPlayersList.Name = "teamAPlayersList";
@@ -89,7 +89,7 @@
             // 
             // fouls
             // 
-            this.fouls.Text = "Fouly";
+            this.fouls.Text = "Fauly";
             this.fouls.Width = 58;
             // 
             // teamAScoreLabel
@@ -112,7 +112,7 @@
             this.teamBPlayersList.FullRowSelect = true;
             this.teamBPlayersList.HideSelection = false;
             this.teamBPlayersList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem2});
             this.teamBPlayersList.Location = new System.Drawing.Point(460, 54);
             this.teamBPlayersList.Margin = new System.Windows.Forms.Padding(6);
             this.teamBPlayersList.Name = "teamBPlayersList";
@@ -134,7 +134,7 @@
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Fouly";
+            this.columnHeader3.Text = "Fauly";
             this.columnHeader3.Width = 58;
             // 
             // teamBScoreLabel
@@ -154,7 +154,7 @@
             this.teamBNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teamBNameLabel.Location = new System.Drawing.Point(455, 12);
             this.teamBNameLabel.Name = "teamBNameLabel";
-            this.teamBNameLabel.Size = new System.Drawing.Size(208, 58);
+            this.teamBNameLabel.Size = new System.Drawing.Size(104, 29);
             this.teamBNameLabel.TabIndex = 10;
             this.teamBNameLabel.Text = "Team B";
             // 

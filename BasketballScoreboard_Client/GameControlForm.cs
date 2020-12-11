@@ -272,11 +272,12 @@ namespace BasketballScoreboard_Client
                 Game.isBuzzing = true;
                 SendGameData();
 
-                Task.Run(async () => {
-                    await Task.Delay(2000);
-                    Game.isBuzzing = false;
-                    SendGameData();
-                });
+                _ = Task.Run(async () =>
+                    {
+                        await Task.Delay(2000);
+                        Game.isBuzzing = false;
+                        SendGameData();
+                    });
 
                 if (Game.currentPeriod != 4)
                 {
