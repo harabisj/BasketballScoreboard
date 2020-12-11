@@ -75,10 +75,5 @@ namespace BasketballScoreboard_Server
                 teamBTimeoutsLeftLabel.Text = game.teamB.timeoutsLeft.ToString();
             });
         }
-
-        private void clockLabel_Click(object sender, EventArgs e)
-        {
-            soundPlayer.Play();
-        }
     }
 }

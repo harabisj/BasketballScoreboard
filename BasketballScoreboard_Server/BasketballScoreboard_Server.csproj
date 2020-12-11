@@ -109,7 +109,6 @@
   <ItemGroup>
     <Content Include="bss.ico" />
     <None Include="Resources\buzzer.wav" />
-    <None Include="Resources\buzzer.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

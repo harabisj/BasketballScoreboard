@@ -170,11 +170,13 @@ namespace BasketballScoreboard_Client
         private void foulsASub1Button_Click(object sender, EventArgs e)
         {
             new RemoveFoulForm(Game.teamA).ShowDialog();
+            UpdateFoulsCount();
         }
 
         private void foulsAAdd1Button_Click(object sender, EventArgs e)
         {
             new AddFoulForm(Game.teamA).ShowDialog();
+            UpdateFoulsCount();
         }
 
 
@@ -232,11 +234,13 @@ namespace BasketballScoreboard_Client
         private void foulsBSub1Button_Click(object sender, EventArgs e)
         {
             new RemoveFoulForm(Game.teamB).ShowDialog();
+            UpdateFoulsCount();
         }
 
         private void foulsBAdd1Button_Click(object sender, EventArgs e)
         {
             new AddFoulForm(Game.teamB).ShowDialog();
+            UpdateFoulsCount();
         }
 
 
@@ -379,6 +383,12 @@ namespace BasketballScoreboard_Client
             }
             else
                 e.Cancel = true;
+        }
+
+        private void UpdateFoulsCount()
+        {
+            teamAFoulsLabel.Text = Game.teamA.GetTotalFouls().ToString();
+            teamBFoulsLabel.Text = Game.teamB.GetTotalFouls().ToString();
         }
     }
 }
