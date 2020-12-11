@@ -25,5 +25,8 @@ namespace BasketballScoreboard_Client.Data
 
         [JsonProperty]
         public static int currentTime = 0;
+
+        [JsonProperty]
+        public static bool isBuzzing = false;
     }
 }

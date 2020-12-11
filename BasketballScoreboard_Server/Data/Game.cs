@@ -24,5 +24,8 @@ namespace BasketballScoreboard_Server.Data
 
         [JsonProperty]
         public int currentTime { get; set; }
+
+        [JsonProperty]
+        public bool isBuzzing { get; set; }
     }
 }

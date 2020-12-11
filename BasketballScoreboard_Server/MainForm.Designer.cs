@@ -77,6 +77,7 @@
             this.clockLabel.Size = new System.Drawing.Size(1323, 341);
             this.clockLabel.TabIndex = 1;
             this.clockLabel.Text = "00:00";
+            this.clockLabel.Click += new System.EventHandler(this.clockLabel_Click);
             // 
             // label1
             // 

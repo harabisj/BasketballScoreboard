@@ -269,6 +269,15 @@ namespace BasketballScoreboard_Client
             this.InvokeIfRequired(async () => {
                 clockLabel.ForeColor = Color.Red;
 
+                Game.isBuzzing = true;
+                SendGameData();
+
+                Task.Run(async () => {
+                    await Task.Delay(2000);
+                    Game.isBuzzing = false;
+                    SendGameData();
+                });
+
                 if (Game.currentPeriod != 4)
                 {
                     Extensions.ControlsEnabled(mainFreezeControls, false);
@@ -296,6 +305,20 @@ namespace BasketballScoreboard_Client
         
         public void OnTimeoutClockStop()
         {
+            Task.Run(async () => {
+                Game.isBuzzing = true;
+                SendGameData();
+                await Task.Delay(500);
+                Game.isBuzzing = false;
+                SendGameData();
+                await Task.Delay(300);
+                Game.isBuzzing = true;
+                SendGameData();
+                await Task.Delay(500);
+                Game.isBuzzing = false;
+                SendGameData();
+            });
+
             Extensions.ControlsEnabled(timeoutFreezeControls, true);
             this.InvokeIfRequired(async () => {
                 clockLabel.ForeColor = Color.Green;
