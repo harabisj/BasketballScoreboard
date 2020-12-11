@@ -98,6 +98,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowResultsForm.Designer.cs">
+      <DependentUpon>ShowResultsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TimerManager.cs" />
     <EmbeddedResource Include="RemoveFoulForm.resx">
       <DependentUpon>RemoveFoulForm.cs</DependentUpon>
@@ -126,6 +132,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShowResultsForm.resx">
+      <DependentUpon>ShowResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

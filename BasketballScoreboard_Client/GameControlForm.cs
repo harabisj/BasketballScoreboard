@@ -333,5 +333,28 @@ namespace BasketballScoreboard_Client
 
             Extensions.ControlsEnabled(timeoutFreezeControls, false);
         }
+
+        private void showResultsButton_Click(object sender, EventArgs e)
+        {
+            new ShowResultsForm().ShowDialog();
+        }
+
+        private void GameControlForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show(
+                "Opravdu chcete ukončit BasketballScoreboard? Přijdete o veškerá zadaná data.",
+                "Ukončit BasketballScoreboard",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (dr == DialogResult.Yes)
+            {
+                connectionsManager.Disconnect();
+                Environment.Exit(0);
+            }
+            else
+                e.Cancel = true;
+        }
     }
 }

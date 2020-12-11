@@ -70,6 +70,7 @@
             this.periodSub1Button = new System.Windows.Forms.Button();
             this.periodAdd1Button = new System.Windows.Forms.Button();
             this.timeoutTimer = new System.Windows.Forms.Timer(this.components);
+            this.showResultsButton = new System.Windows.Forms.Button();
             this.teamAGroupBox.SuspendLayout();
             this.teamBGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -562,6 +563,17 @@
             // 
             this.timeoutTimer.Interval = 1000;
             // 
+            // showResultsButton
+            // 
+            this.showResultsButton.Location = new System.Drawing.Point(1176, 29);
+            this.showResultsButton.Margin = new System.Windows.Forms.Padding(6);
+            this.showResultsButton.Name = "showResultsButton";
+            this.showResultsButton.Size = new System.Drawing.Size(161, 44);
+            this.showResultsButton.TabIndex = 1;
+            this.showResultsButton.Text = "Výsledky";
+            this.showResultsButton.UseVisualStyleBackColor = true;
+            this.showResultsButton.Click += new System.EventHandler(this.showResultsButton_Click);
+            // 
             // GameControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -572,6 +584,7 @@
             this.Controls.Add(this.teamBGroupBox);
             this.Controls.Add(this.teamAGroupBox);
             this.Controls.Add(this.periodNumberLabel);
+            this.Controls.Add(this.showResultsButton);
             this.Controls.Add(this.runTimeoutButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.periodAdd1Button);
@@ -583,6 +596,7 @@
             this.MaximizeBox = false;
             this.Name = "GameControlForm";
             this.Text = "BSc - Řídící panel";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameControlForm_FormClosing);
             this.Load += new System.EventHandler(this.GameControlForm_Load);
             this.teamAGroupBox.ResumeLayout(false);
             this.teamAGroupBox.PerformLayout();
@@ -635,5 +649,6 @@
         private System.Windows.Forms.Button periodSub1Button;
         private System.Windows.Forms.Button periodAdd1Button;
         private System.Windows.Forms.Timer timeoutTimer;
+        private System.Windows.Forms.Button showResultsButton;
     }
 }
