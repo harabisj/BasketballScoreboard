@@ -70,7 +70,7 @@
             // 
             // fouls
             // 
-            this.fouls.Text = "Fouly";
+            this.fouls.Text = "Fauly";
             this.fouls.Width = 58;
             // 
             // addFoulButton
