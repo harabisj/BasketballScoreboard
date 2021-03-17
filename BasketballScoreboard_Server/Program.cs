@@ -16,7 +16,20 @@ namespace BasketballScoreboard_Server
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            /**
+             * At first run ConnectionForm
+             */
+            ConnectionForm connectionForm = new ConnectionForm();
+            Application.Run(connectionForm);
+            
+            /**
+             * If the IP has been selected in ConnectionForm, run MainForm
+             */
+            if (connectionForm.selectedIp != "")
+            {
+                Application.Run(new MainForm(connectionForm.selectedIp));
+            }
         }
     }
 }

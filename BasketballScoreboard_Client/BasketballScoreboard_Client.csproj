@@ -7,7 +7,7 @@
     <ProjectGuid>{B6F1B85F-FCAC-4D49-B71A-F7F48D57EA1C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>BasketballScoreboard_Client</RootNamespace>
-    <AssemblyName>BasketballScoreboard_Client</AssemblyName>
+    <AssemblyName>BasketballScoreboard Client</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,7 +32,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bsc.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleTcp, Version=2.1.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSimpleTcp.2.1.0.14\lib\net461\SimpleTcp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +55,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="RemoveFoulForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="RemoveFoulForm.Designer.cs">
+      <DependentUpon>RemoveFoulForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFoulForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFoulForm.Designer.cs">
+      <DependentUpon>AddFoulForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionForm.Designer.cs">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionsManager.cs" />
+    <Compile Include="Data\Game.cs" />
+    <Compile Include="Data\Player.cs" />
+    <Compile Include="Data\Team.cs" />
+    <Compile Include="EditTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTeamForm.Designer.cs">
+      <DependentUpon>EditTeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="GameControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameControlForm.Designer.cs">
+      <DependentUpon>GameControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameInitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameInitForm.Designer.cs">
+      <DependentUpon>GameInitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowResultsForm.Designer.cs">
+      <DependentUpon>ShowResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerManager.cs" />
+    <EmbeddedResource Include="RemoveFoulForm.resx">
+      <DependentUpon>RemoveFoulForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFoulForm.resx">
+      <DependentUpon>AddFoulForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionForm.resx">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTeamForm.resx">
+      <DependentUpon>EditTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameControlForm.resx">
+      <DependentUpon>GameControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameInitForm.resx">
+      <DependentUpon>GameInitForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +132,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShowResultsForm.resx">
+      <DependentUpon>ShowResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bsc.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
