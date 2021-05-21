@@ -47,8 +47,6 @@ namespace BasketballScoreboard_Server
                     serverStatusLabel.BackColor = Color.FromArgb(241, 196, 15);
                 }
                 statusStrip.Visible = !connected;
-                /* WIP serverStatusLabel.Text = connected ? "ONLINE" : "ČEKÁ SE NA PŘIPOJENÍ";
-                serverStatusLabel.BackColor = connected ? Color.FromArgb(46, 204, 113) : Color.FromArgb(241, 196, 15);*/
             });
         }
 
